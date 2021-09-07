@@ -7,6 +7,14 @@
 body{
 	min-width:360px;
 }
+a, a:hover, a:active, a:visited, a:focus,
+select, select:hover, select:active, select:visited, select:focus,
+textarea, textarea:hover, textarea:active, textarea:visited, textarea:focus,
+input, input:hover, input:active, input:visited, input:focus,
+button, button:hover, button:active, button:visited, button:focus {
+  text-decoration: none !important;
+  outline: none !important;
+}
 .w-f{
 	padding-left: 26px !important;
 	padding-right: 26px;
@@ -30,15 +38,14 @@ font-weight: 300;
 padding-left: 17px;
 padding-right: 17px;
 border: 0;
+cursor: pointer;
+transition: background 0.5s linear !important;
 }
-a, a:hover, a:active, a:visited, a:focus,
-select, select:hover, select:active, select:visited, select:focus,
-textarea, textarea:hover, textarea:active, textarea:visited, textarea:focus,
-input, input:hover, input:active, input:visited, input:focus,
-button, button:hover, button:active, button:visited, button:focus {
-  text-decoration: none !important;
-  outline: none !important;
+.g-btn:hover{
+	background: transparent linear-gradient(180deg, #4B9B51 0%, #68DB7C 100%) 0% 0% no-repeat padding-box;
+	transition: background 0.5s linear !important;
 }
+
 .all-h{
 	color: #444445;
 	font-size: 32px;
@@ -275,11 +282,14 @@ box-shadow: 0px 3px 6px #00000026;
 	margin: 14px;
 }
 
-
+footer{
+	padding-bottom: 60px;
+}
 footer hr{
 	background: #DBD8D8;
 	border: 0;
 	height: 1px;
+	margin: 40px 0;
 }
 footer a{
 	color: #232323;
