@@ -1,101 +1,120 @@
-@media(max-width: 991px){
-  nav .nav-item{
+@media(max-width: 991px) {
+  nav .nav-item {
     padding: 0 10px;
   }
-  nav .navbar-brand{
+
+  nav .navbar-brand {
     margin-right: 40px;
   }
-  .banner{
-  height: 656px;
 
-  padding-top: 120px;
+  .banner {
+    height: 656px;
+    padding-top: 120px;
   }
-  .banner>div{
+
+  .banner>div {
     background-size: auto 236px;
-    background-position: center 109% ;
+    background-position: center 109%;
   }
-  .banner button{
+
+  .banner button {
     margin: auto;
     display: block;
   }
+
   .banner h2,
-  .banner p{
+  .banner p {
     margin: auto;
     max-width: 572px;
     text-align: center;
   }
 }
-@media(max-width: 767px){
-  nav .navbar-brand h5{
+
+@media(max-width: 767px) {
+  nav .navbar-brand h5 {
     font-size: 13px;
   }
-  .nav{
+
+  .nav {
     background: #ffffff;
   }
-  nav .navbar-brand h5{
+
+  nav .navbar-brand h5 {
     color: #232323;
   }
-  nav .nav-link{
+
+  nav .nav-link {
     color: #30373A !important;
-    font-size: 16px ;
+    font-size: 16px;
   }
-  .giveaway img{
+
+  .giveaway img {
     margin-top: 60px;
   }
-  footer hr{
+
+  footer hr {
     background: #00000033;
     margin: 0 -30px;
   }
-  footer p{
+
+  footer p {
     text-align: center !important;
   }
 }
-@media(max-width:576px) {
-  .banner{
 
+@media(max-width:576px) {
+  .banner {
     height: 600px;
     padding-top: 45px;
   }
-  .banner>div{
+
+  .banner>div {
     background-size: auto 415px;
-background-position: center 142%;
+    background-position: center 142%;
   }
-  .banner h2{
+
+  .banner h2 {
     font-size: 20px;
     line-height: 30px;
   }
-  .all-p{
+
+  .all-p {
     font-size: 16px;
   }
-  .Statistics .item{
-    width: 108px;
-height: 108px;
-background: #FEFEFE 0% 0% no-repeat padding-box;
-box-shadow: 0px 0px 10px #0000001A;
-border-radius: 4px;
-margin: 14px auto;
-padding: 18px 0px;
 
+  .Statistics .item {
+    width: 108px;
+    height: 108px;
+    background: #FEFEFE 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #0000001A;
+    border-radius: 4px;
+    margin: 14px auto;
+    padding: 18px 0px;
   }
-  .Statistics .all-h{
+
+  .Statistics .all-h {
     font-size: 20px;
     line-height: 30px;
   }
-  .choose-giveaway .row>div>img{
+
+  .choose-giveaway .row>div>img {
     margin: 15px auto;
     display: block;
   }
-  .choose-giveaway{
+
+  .choose-giveaway {
     text-align: center !important;
   }
 }
+
 @media (max-width:450px) {
-  .banner{
+  .banner {
     /* padding-top: 80px; */
   }
 }
+
 @media (min-width:768px) {
-  footer .collapse{
+  footer .collapse {
     display: block;
   }
 }
