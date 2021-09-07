@@ -148,13 +148,15 @@ nav .navbar-toggler h1 {
 
 
 .banner {
+
+  height: 707px;
+}
+.banner>div{
   background-image: url('../images/png_widget.png');
   background-repeat: no-repeat;
   background-size: 399px auto;
   background-position: right center;
-  height: 707px;
 }
-
 .banner h2 {
   color: #232323;
   font-size: 32px;
