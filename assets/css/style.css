@@ -39,8 +39,8 @@ button, button:hover, button:active, button:visited, button:focus {
   font-size: 18px;
   line-height: 34px;
   font-weight: 300;
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 20px;
+padding-right: 20px;
   border: 0;
   cursor: pointer;
   transition: background 0.5s linear !important;
@@ -74,14 +74,16 @@ button, button:hover, button:active, button:visited, button:focus {
 .top-nav {
   background: #5FBD66 0% 0% no-repeat padding-box;
   color: white;
+    padding: 7px 0 3px 0;
 }
 
 .top-nav p {
   color: #FEFEFE;
   font-size: 14px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: 14px;
   margin: 0;
+
 }
 
 .nav {
@@ -180,16 +182,16 @@ nav .navbar-toggler h1 {
 .giveaway {
   background: #F6F6F6;
   padding-top: 70px;
-  padding-bottom: 58px;
+  padding-bottom: 75px;
 }
 
 .giveaway .all-h,
 .giveaway .all-p {
-  text-align: center;
+  text-align: left;
 }
 
 .givaway-hopper {
-  padding-top: 42px;
+  padding-top: 75px;
   padding-bottom: 65px;
 }
 
@@ -245,7 +247,10 @@ nav .navbar-toggler h1 {
   text-align: center;
   margin-bottom: 16px;
 }
-
+.Statistics .item .all-p,
+.Statistics .item .all-h{
+  text-align: center !important;
+}
 .Statistics .img {
   width: 100%;
   height: 60px;
@@ -265,7 +270,7 @@ nav .navbar-toggler h1 {
 }
 
 .Statistics .item {
-  margin-top: 35px;
+  /* margin-top: 35px; */
 }
 
 .choose-giveaway {
@@ -285,6 +290,7 @@ nav .navbar-toggler h1 {
 
 .choose-giveaway ul {
   margin-top: 20px;
+  text-align: left;
 }
 
 .choose-giveaway ul li {
