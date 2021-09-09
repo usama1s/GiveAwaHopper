@@ -1,4 +1,4 @@
-@media(max-width: 991px) {
+@media(max-width: 991.5px) {
   nav .nav-item {
     padding: 0 10px;
   }
@@ -6,16 +6,22 @@
   nav .navbar-brand {
     margin-right: 40px;
   }
+
   .banner>div {
     background-size: auto 55vw;
   }
 
+  .Statistics .all-p,
+  .Statistics .all-h {
+    text-align: left !important;
+  }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 767.5px) {
   nav .navbar-brand h5 {
     font-size: 13px;
   }
+
   .nav {
     background: #ffffff;
   }
@@ -33,12 +39,11 @@
     background-size: auto 236px;
     background-position: center 109%;
   }
+
   .banner {
-    height: 656px;
+    height: 600px;
     padding-top: 120px;
   }
-
-
 
   .banner button {
     margin: auto;
@@ -52,15 +57,15 @@
     text-align: center;
   }
 
-
-
   .giveaway img {
     margin-top: 60px;
   }
+
   .giveaway .all-h,
   .giveaway .all-p {
     text-align: center;
   }
+
   .Statistics .item {
     width: 108px;
     height: 108px;
@@ -76,20 +81,20 @@
     font-size: 20px;
     line-height: 30px;
   }
-  /* .Statistics .row>div:nth-child(2n+1) .item{
-    margin-right: 0 !important;
-    margin-left: auto !important;
+
+  .Statistics .all-p,
+  .Statistics .all-h {
+    text-align: center !important;
   }
-  .Statistics .row>div:nth-child(2n) .item{
-    margin-left: 0;
-    margin-right: auto;
-  } */
+
   .Statistics .row>div:nth-child(2n+1) {
     text-align: right;
   }
+
   .Statistics .row>div:nth-child(2n) {
     text-align: left;
   }
+
   footer hr {
     background: #00000033;
     margin: 0 -30px;
@@ -120,8 +125,6 @@
     font-size: 16px;
   }
 
-
-
   .choose-giveaway .row>div>img {
     margin: 15px auto;
     display: block;
@@ -144,9 +147,4 @@
   }
 }
 
-@media (min-width:767px) and (max-width:990px) {
-  .Statistics .all-p,
-  .Statistics .all-h{
-    text-align: left !important;
-  }
-}
+@media (min-width:767px) and (max-width:992px) {}
