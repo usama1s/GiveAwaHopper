@@ -78,10 +78,7 @@
     margin-top: 60px;
   }
 
-  .giveaway .all-h,
-  .giveaway .all-p {
-    text-align: center;
-  }
+
 .giveaway .all-h{
   font-size: 18px;
   line-height: 27px;
@@ -176,7 +173,10 @@
     font-size: 20px;
     line-height: 30px;
   }
-
+  .giveaway .all-h,
+  .giveaway .all-p {
+    text-align: center;
+  }
   .all-p {
     font-size: 16px;
   }
@@ -188,6 +188,44 @@
 
   .choose-giveaway {
     text-align: center !important;
+  }
+}
+
+
+
+@media screen and  (min-width:768px) {
+  .nav {
+    background-color: #252A25;
+  }
+  nav .navbar-brand h5{
+    color: #FEFEFE;
+    font-size: 20px;
+font-weight: 500;
+  }
+  nav .nav-link {
+    font-size: 18px;
+    line-height: 21px;
+    color: #FEFEFE !important;
+  }
+  .Statistics .item{
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    background: transparent;
+  }
+  .Statistics .all-p, .Statistics .all-h{
+    text-align: left !important;
+  }
+  .givaway-hopper .all-h,
+  .Statistics .all-h{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  footer .collapse {
+    display: block;
+  }
+  footer>div>hr{
+        margin: 40px 0;
   }
 }
 
@@ -226,41 +264,15 @@
     background-position: right center;
 
 }
+.Statistics .all-p{
+  text-align: center !important;
 }
-
-@media screen and  (min-width:768px) {
-  .nav {
-    background-color: #252A25;
-  }
-  nav .navbar-brand h5{
-    color: #FEFEFE;
-    font-size: 20px;
-font-weight: 500;
-  }
-  nav .nav-link {
-    font-size: 18px;
-    line-height: 21px;
-    color: #FEFEFE !important;
-  }
-  .Statistics .item{
-    box-shadow: none;
-    width: auto;
-    height: auto;
-    background: transparent;
-  }
-  .Statistics .all-p, .Statistics .all-h{
-    text-align: left !important;
-  }
-  .Statistics .all-h{
-    font-size: 32px;
-    line-height: 40px;
-  }
-  footer .collapse {
-    display: block;
-  }
-  footer>div>hr{
-        margin: 40px 0;
-  }
+.givaway-hopper .all-h,
+.Statistics .all-h{
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center !important;
+}
 }
 
 @media screen and  (min-width:767px) and (max-width:992px) {}
