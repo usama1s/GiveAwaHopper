@@ -10,14 +10,14 @@
     height: 600px;
     /* padding-top: 0px;
     margin-top: -150px; */
-    padding-top: 120px;
+    padding-top: 80px;
   }
   .banner>div {
     background-size: auto 55vw;
   }
   .banner>div {
-    background-size: auto 280px;
-    background-position: center 109%;
+    background-size: auto 350px;
+    background-position: center 135%;
   }
 
   .banner button {
@@ -67,7 +67,7 @@
 
   .banner {
     height: 600px;
-    padding-top: 120px;
+    padding-top: 100px;
     margin-top: 0px;
   }
 
