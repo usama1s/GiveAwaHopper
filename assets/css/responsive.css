@@ -80,8 +80,8 @@
 
 
 .giveaway .all-h{
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 24px;
+  line-height: 30px;
 }
 .giveaway .all-p{
   font-size: 16px;
@@ -221,6 +221,13 @@ font-weight: 500;
     font-size: 24px;
     line-height: 30px;
   }
+  .Statistics .row>div{
+    text-align: center !important;
+  }
+  .banner {
+    height: 600px;
+    padding-top: 80px;
+}
   footer .collapse {
     display: block;
   }
