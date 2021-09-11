@@ -6,10 +6,39 @@
   nav .navbar-brand {
     margin-right: 40px;
   }
-
+  .banner {
+    /* height: 600px; */
+    padding-top: 0px;
+    margin-top: -150px;
+  }
   .banner>div {
     background-size: auto 55vw;
   }
+  .banner>div {
+    background-size: auto 236px;
+    background-position: center 109%;
+  }
+
+  .banner button {
+    margin: auto;
+    display: block;
+  }
+
+  .banner h2,
+  .banner p {
+    margin: auto;
+    max-width: 572px;
+    text-align: center;
+  }
+.banner h2{
+  font-size: 24px;
+  line-height: 30px;
+
+}
+.banner p{
+  font-size: 16px;
+  line-height: 24px;
+}
 
   .Statistics .all-p,
   .Statistics .all-h {
@@ -35,36 +64,15 @@
     font-size: 16px;
   }
 
-  .banner>div {
-    background-size: auto 236px;
-    background-position: center 109%;
-  }
-
   .banner {
     height: 600px;
     padding-top: 120px;
+    margin-top: 0px;
   }
 
-  .banner button {
-    margin: auto;
-    display: block;
-  }
 
-  .banner h2,
-  .banner p {
-    margin: auto;
-    max-width: 572px;
-    text-align: center;
-  }
-.banner h2{
-  font-size: 24px;
-  line-height: 30px;
 
-}
-.banner p{
-  font-size: 16px;
-  line-height: 24px;
-}
+
   .giveaway img {
     margin-top: 60px;
   }
