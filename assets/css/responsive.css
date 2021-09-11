@@ -229,6 +229,19 @@
 }
 
 @media screen and  (min-width:768px) {
+  .nav {
+    background-color: #252A25;
+  }
+  nav .navbar-brand h5{
+    color: #FEFEFE;
+    font-size: 20px;
+font-weight: 500;
+  }
+  nav .nav-link {
+    font-size: 18px;
+    line-height: 21px;
+    color: #FEFEFE !important;
+  }
   footer .collapse {
     display: block;
   }
