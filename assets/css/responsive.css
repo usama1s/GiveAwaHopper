@@ -242,8 +242,24 @@ font-weight: 500;
     line-height: 21px;
     color: #FEFEFE !important;
   }
+  .Statistics .item{
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    background: transparent;
+  }
+  .Statistics .all-p, .Statistics .all-h{
+    text-align: left !important;
+  }
+  .Statistics .all-h{
+    font-size: 32px;
+    line-height: 40px;
+  }
   footer .collapse {
     display: block;
+  }
+  footer>div>hr{
+        margin: 40px 0;
   }
 }
 
