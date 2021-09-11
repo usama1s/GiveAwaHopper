@@ -56,7 +56,15 @@
     max-width: 572px;
     text-align: center;
   }
+.banner h2{
+  font-size: 24px;
+  line-height: 30px;
 
+}
+.banner p{
+  font-size: 16px;
+  line-height: 24px;
+}
   .giveaway img {
     margin-top: 60px;
   }
@@ -65,7 +73,29 @@
   .giveaway .all-p {
     text-align: center;
   }
+.giveaway .all-h{
+  font-size: 18px;
+  line-height: 27px;
+}
+.giveaway .all-p{
+  font-size: 16px;
+  line-height: 24px;
+}
+.givaway-hopper .all-h{
+  font-size: 24px;
 
+}
+.givaway-hopper h5{
+  font-size: 18px;
+  line-height: 27px;
+}
+.givaway-hopper .all-p{
+  font-size: 16px;
+  line-height: 24px;
+}
+.givaway-hopper .img{
+  margin-top: 0;
+}
   .Statistics .item {
     width: 108px;
     height: 108px;
@@ -94,7 +124,21 @@
   .Statistics .row>div:nth-child(2n) {
     text-align: left;
   }
-
+.choose-giveaway .all-h{
+  font-size: 24px;
+  line-height: 30px;
+}
+.choose-giveaway h5{
+  font-size: 18px;
+  line-height: 27px;
+}
+.all-p{
+  font-size: 16px;
+  line-height: 24px;
+}
+.choose-giveaway ul li .all-p{
+  font-weight: 300;
+}
   footer hr {
     background: #00000033;
     margin: 0 -30px;
@@ -102,6 +146,9 @@
 
   footer p {
     text-align: center !important;
+  }
+  footer{
+    padding-bottom: 0;
   }
 }
 

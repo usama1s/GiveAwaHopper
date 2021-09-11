@@ -17,7 +17,9 @@ button, button:hover, button:active, button:visited, button:focus {
   text-decoration: none !important;
   outline: none !important;
 }
-
+a:hover{
+  text-decoration: underline !important; 
+}
 .w-f {
   padding-left: 26px !important;
   padding-right: 26px;
@@ -104,7 +106,7 @@ nav .navbar-brand img {
 
 nav .navbar-brand h5 {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 20px;
   letter-spacing: 0px;
   color: #FEFEFE;
