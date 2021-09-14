@@ -721,10 +721,12 @@ background-image: url(../images/pricing/check-bussiness.png);
 .features table tbody td{
   text-align: center;
 }
+.features table thead tr th:nth-of-type(1),
 .features table tbody tr td:nth-of-type(1){
   padding-left: 30px;
   text-align: left;
 }
+.features table thead tr th:nth-last-of-type(1),
 .features table tbody tr td:nth-last-of-type(1){
   padding-right: 30px;
 }
