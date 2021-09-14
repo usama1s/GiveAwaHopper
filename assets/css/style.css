@@ -519,8 +519,11 @@ border-color: rgb(35, 35, 35);
  .pricing-plan-mob .pricing-item.grow .b-top{
    background: transparent linear-gradient(180deg, #97D0F6 0%, #5BB9F9 100%) 0% 0% no-repeat padding-box;
  }
+ .pricing-plan-des .pricing-item.professional .b-top{
+      height: 36px;
+ }
  .pricing-plan-mob .pricing-item.professional .b-top{
-   height: 36px;
+
 /* background: transparent linear-gradient(180deg, #46E862 0%, #39C244 100%) 0% 0% no-repeat padding-box; */
 background: transparent linear-gradient(180deg, #75F27E 0%, #64CB6B 100%) 0% 0% no-repeat padding-box;
  }
@@ -642,4 +645,149 @@ background-image: url(../images/pricing/check-bussiness.png);
 }
 .pricing-plan-des .pricing-item.free .brd{
   border-right: 1px solid #D6D6D6;
+}
+
+
+
+.features {
+  margin-bottom: 80px;
+}
+.features .nav{
+  background: transparent;
+}
+.features .nav-tabs{
+  border-bottom: 2px solid #F6F9FC;
+}
+.features .nav-tabs .nav-link{
+  padding-left: 0;
+  padding-right: 0;
+}
+.features .nav-tabs .nav-item.show .nav-link,
+.features .nav-tabs .nav-link.active{
+  border: 0;
+  text-decoration: underline !important;
+}
+.features .nav-tabs .nav-link{
+  font-size: 16px;
+  font-weight: 500;
+
+  line-height: 27px;
+}
+.features .nav-tabs .nav-link:hover{
+  border: 0;
+}
+.features .nav-tabs .nav-link[href="#free"]{
+    color: #30373A;
+}
+.features .nav-tabs .nav-link[href="#grow"]{
+    color: #5BB9F9;
+}
+.features .nav-tabs .nav-link[href="#professional"]{
+    color: #5CB863;
+}
+.features .nav-tabs .nav-link[href="#business"]{
+    color: #A243D6;
+}
+
+.features .tab-content .all-p{
+  color: #30373A;
+  line-height: 57px;
+  padding: 0 17px;
+
+}
+.features .tab-content ul li span{
+  width: 70px;
+  /* display: block; */
+}
+.features .tab-content ul li{
+  list-style: none;
+  padding: 0;
+}
+.features table tbody tr:nth-of-type(2n),
+.features .tab-content ul li:nth-of-type(2n){
+  background: #E8F5EB 0% 0% no-repeat padding-box;
+}
+.features table tbody tr{
+  color: #30373A;
+  line-height: 57px;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0;
+}
+.features table {
+  width: 100%;
+}
+.features table thead th,
+.features table tbody td{
+  text-align: center;
+}
+.features table tbody tr td:nth-of-type(1){
+  padding-left: 30px;
+  text-align: left;
+}
+.features table tbody tr td:nth-last-of-type(1){
+  padding-right: 30px;
+}
+.features table thead th:nth-of-type(2){
+  color: #30373A;
+}
+.features table thead th:nth-of-type(3){
+  color: #5BB9F9;
+}
+.features table thead th:nth-of-type(4){
+  color: #5CB863;
+}
+.features table thead th:nth-of-type(5){
+  color: #A243D6;
+}
+
+.faq{
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background: #F9F9F9;
+}
+.faq .all-p,
+.faq .text-18{
+  color: #232323;
+}
+.faq .card-header{
+  background: #FEFEFE 0% 0% no-repeat padding-box;
+
+}
+.faq .card{
+background: transparent;
+box-shadow: 0px 3px 6px #00000029;
+
+}
+.faq .card-body{
+  background: transparent;
+  font-size: 16px;
+  color: #232323;
+  line-height: 24px;
+  font-weight: 300;
+  padding: 25px;
+}
+.faq .card-header button{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #232323;
+  min-height: 41px;
+  position: relative;
+    padding: 0 21px;
+}
+.faq .card-header button::after{
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #232323;
+    font-size: 16px;
+    font-weight: 900;
+}
+.faq .card{
+  margin-bottom: 14px;
 }
