@@ -63,7 +63,7 @@ padding-right: 20px;
 
 .all-p {
   color: #232323;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 300;
   margin-bottom: 0;
@@ -378,4 +378,104 @@ footer p {
 footer button.all-p i {
   margin-left: 8px;
   font-size: 12px;
+}
+
+
+
+
+/* pricing page */
+.pricing-plan-mob {
+  padding-top: 48px;
+}
+.pricing-plan-mob .mob-pricing-slider{
+  margin-top: 48px;
+}
+.pricing-plan-mob .pricing-item{
+  border: 2px solid #5CB863;
+  width: 300px !important;
+  padding: 35px 24px 24px 24px;
+  /* border-top: 9px solid #5CB863; */
+  margin: 17px;
+  box-shadow: 0px 3px 6px #00000029;
+  position: relative;
+}
+.pricing-plan-mob .pricing-item .b-top{
+  position: absolute;
+  height: 7px;
+  width: calc(100% + 4px);
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,calc(-100% - 2px));
+}
+.pricing-plan-mob .pricing-item img{
+  margin: auto;
+  display: block;
+  margin-bottom: 40px;
+  height: 96px;
+}
+.pricing-plan-mob .pricing-item h2{
+  margin-top: 28px;
+}
+.text-18{
+  font-size: 18px;
+  line-height: 27px;
+font-weight: 500;
+}
+.text-20{
+  font-size: 20px;
+  line-height: 30px;
+font-weight: 500;color: #232323;
+}
+
+.pricing-btn{
+  background: #FEFEFE;
+box-shadow: 0px 3px 6px #00000029;
+height: 40px;
+/* border: 1px solid #46E862; */
+border: 0;
+padding: 0 22px;
+color: #FEFEFE;
+font-size: 16px;
+line-height: 24px;
+cursor: pointer;
+}
+.pricing-plan-mob .pricing-item .pricing-btn{
+  margin-top: 32px;
+}
+.pricing-plan-mob .pricing-item hr{
+  width: 100%;
+  padding: 0;
+  height: 1px;
+  background: #70707020;
+  margin: 30px  auto 13px auto;
+}
+.pricing-plan-mob .all-p{
+  color: #30373A;
+}
+.slick-arrow i{
+  font-size: 18px;
+  font-weight: 900;
+  color: #232323;
+}
+.slick-track{
+  margin-bottom: 15px;
+}
+.slick-prev.slick-arrow{
+  position: absolute;
+    left: calc(50% - 80px);
+    bottom: -35px;
+    top: auto;
+    cursor: pointer;
+    z-index: 1;
+}
+.slick-next.slick-arrow{
+  position: absolute;
+    left: calc(50% + 71px);
+    bottom: -35px;
+    top: auto;
+    cursor: pointer;
+    z-index: 10;
+}
+.slick-prev:before, .slick-next:before{
+  font-size: 0;
 }
