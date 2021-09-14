@@ -395,7 +395,7 @@ footer button.all-p i {
   width: 300px !important;
   padding: 35px 24px 24px 24px;
   /* border-top: 9px solid #5CB863; */
-  margin: 17px;
+  margin: 12px;
   box-shadow: 0px 3px 6px #00000029;
   position: relative;
 }
@@ -426,7 +426,11 @@ font-weight: 500;
   line-height: 30px;
 font-weight: 500;color: #232323;
 }
-
+.text-35{
+  font-size: 35px;
+  line-height: 53px;
+font-weight: 500;
+}
 .pricing-btn{
   background: #FEFEFE;
 box-shadow: 0px 3px 6px #00000029;
@@ -478,4 +482,164 @@ cursor: pointer;
 }
 .slick-prev:before, .slick-next:before{
   font-size: 0;
+}
+ .pricing-plan-des .pricing-item img{
+   margin-top: 60px;
+   margin-bottom: 50px;
+ }
+  .pricing-plan-mob .pricing-item.free{
+border-color: rgb(35, 35, 35);
+  }
+ .pricing-plan-mob .pricing-item.grow{
+   border-color: #5BB9F9
+ }
+ .pricing-plan-mob .pricing-item.professional{
+   border-color: #5CB863
+ }
+ .pricing-plan-mob .pricing-item.bussiness{
+   border-color: #A243D6
+ }
+  .pricing-plan-des .pricing-item hr{
+    height: 0.1px;
+    margin-bottom: 25px;
+  }
+ .pricing-plan-des .pricing-item.grow hr{
+   background: #5BB9F9;
+ }
+ .pricing-plan-des .pricing-item.professional hr{
+    background: #5CB863;
+ }
+ .pricing-plan-des .pricing-item.bussiness hr{
+   background: #A243D6
+ }
+ .pricing-plan-mob .pricing-item.free .b-top{
+   background: transparent linear-gradient(
+   180deg, #6B6B6B 0%, #232323 100%) 0% 0% no-repeat padding-box;
+ }
+ .pricing-plan-mob .pricing-item.grow .b-top{
+   background: transparent linear-gradient(180deg, #97D0F6 0%, #5BB9F9 100%) 0% 0% no-repeat padding-box;
+ }
+ .pricing-plan-mob .pricing-item.professional .b-top{
+   height: 36px;
+/* background: transparent linear-gradient(180deg, #46E862 0%, #39C244 100%) 0% 0% no-repeat padding-box; */
+background: transparent linear-gradient(180deg, #75F27E 0%, #64CB6B 100%) 0% 0% no-repeat padding-box;
+ }
+ .pricing-plan-des .pricing-item.professional .b-top p{
+   font-size: 12px;
+   line-height: 36px;
+   color: #FEFEFE;
+ }
+ .pricing-plan-mob .pricing-item.bussiness .b-top{
+background: transparent linear-gradient(180deg, #CD72FF 0%, #A243D6 100%) 0% 0% no-repeat padding-box;
+ }
+.pricing-plan-mob .pricing-item.free button{
+  color: #232323;
+}
+ .pricing-plan-mob .pricing-item.grow button{
+   background: transparent linear-gradient(180deg, #85CCFC 0%, #52AAE6 100%) 0% 0% no-repeat padding-box;
+ }
+ .pricing-plan-mob .pricing-item.professional button{
+/* background: transparent linear-gradient(180deg, #46E862 0%, #39C244 100%) 0% 0% no-repeat padding-box; */
+background: transparent linear-gradient(180deg, #75F27E 0%, #64CB6B 100%) 0% 0% no-repeat padding-box;
+ }
+ .pricing-plan-mob .pricing-item.bussiness button{
+background: transparent linear-gradient(180deg, #BB5FEE 0%, #9A42CB 100%) 0% 0% no-repeat padding-box;
+ }
+ .pricing-plan-mob .pricing-item.free h1{
+   color: rgb(35, 35, 35);;
+ }
+ .pricing-plan-mob .pricing-item.grow h1,
+ .pricing-plan-des .pricing-item.grow p.all-p,
+ .pricing-plan-des .pricing-item.grow h2 span{
+    color: #5BB9F9;
+ }
+
+ .pricing-plan-mob .pricing-item.professional h1,
+ .pricing-plan-des .pricing-item.professional p.all-p,
+ .pricing-plan-des .pricing-item.professional h2 span{
+    color: #5CB863;
+ }
+
+ .pricing-plan-mob .pricing-item.bussiness h1,
+ .pricing-plan-des .pricing-item.bussiness p.all-p,
+ .pricing-plan-des .pricing-item.bussiness h2 span{
+    color: #A243D6;
+ }
+.pricing-plan-des .pricing-item{
+  width: 100% !important;
+  box-shadow: none;
+
+}
+.pricing-plan-des .row{
+  margin-top: 48px;
+}
+
+
+.pricing-plan-des ul{
+margin-top: 40px;
+}
+.pricing-plan-des ul li{
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444445;
+  font-weight: 500;
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 23px;
+}
+.pricing-plan-des ul li::before{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+.pricing-plan-des .grow ul li::before{
+background-image: url(../images/pricing/check-grow.png);
+}
+.pricing-plan-des .professional ul li::before{
+background-image: url(../images/pricing/check-professional.png);
+}
+.pricing-plan-des .bussiness ul li::before{
+background-image: url(../images/pricing/check-bussiness.png);
+}
+.pricing-plan-des ul li.cross::before{
+  background-image: url(../images/pricing/cross.png);
+}
+.pricing-plan-des ul li.cross{
+  color: #959595;
+}
+
+
+.pricing-plan-des .pricing-item.free{
+  border: 1px solid #D6D6D6;
+  padding: 24px;
+}
+
+.pricing-plan-des .pricing-item.free .text-18{
+  font-weight: 100;
+  margin: 0 !important;
+}
+.pricing-plan-des .pricing-item.free h1{
+  font-weight: 900 !important;
+}
+.pricing-plan-des .pricing-item.free ul li{
+  margin: 0;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 27px;
+}
+.pricing-plan-des .pricing-item.free ul li::before{
+  background-image: url(../images/pricing/check-free.png);
+}
+.pricing-plan-des .pricing-item.free .brd{
+  border-right: 1px solid #D6D6D6;
 }
