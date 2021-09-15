@@ -20,6 +20,7 @@ button, button:hover, button:active, button:visited, button:focus {
 a:hover{
   text-decoration: underline !important;
 }
+.w-f2,
 .w-f {
   padding-left: 26px !important;
   padding-right: 26px;
@@ -30,7 +31,10 @@ a:hover{
   max-width: 1088px;
   margin: auto;
 }
-
+.w-f2>*{
+  max-width: 1300px;
+  margin: auto;
+}
 .g-btn {
   background: transparent linear-gradient(180deg, #68DB7C 0%, #4B9B51 100%) 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
@@ -529,8 +533,9 @@ border-color: rgb(35, 35, 35);
 background: transparent linear-gradient(180deg, #75F27E 0%, #64CB6B 100%) 0% 0% no-repeat padding-box;
  }
  .pricing-plan-des .pricing-item.professional .b-top p{
-   font-size: 12px;
+   font-size: 16px;
    line-height: 36px;
+   font-weight: 500;
    color: #FEFEFE;
  }
  .pricing-plan-mob .pricing-item.bussiness .b-top{
@@ -656,7 +661,16 @@ background-image: url(../images/pricing/check-bussiness.png);
 }
 
 .features {
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
+}
+.features ul{
+  margin: 0;
+}
+.features .all-p span{
+  font-weight: 300;
+}
+.features h1{
+  font-weight: 300;
 }
 .features .nav{
   background: transparent;
@@ -731,6 +745,7 @@ background-image: url(../images/pricing/check-bussiness.png);
 .features table tbody tr td:nth-of-type(1){
   padding-left: 30px;
   text-align: left;
+  font-weight: 500;
 }
 .features table thead tr th:nth-last-of-type(1),
 .features table tbody tr td:nth-last-of-type(1){
@@ -830,4 +845,32 @@ margin: 2px;
 }
 .review .text-18.dd span{
   color: #959595;
+}
+.giveaway-hopper2 .all-h{
+  font-size: 18px !important;
+}
+.pricing-btn2{
+color: #FEFEFE;
+font-size: 12px;
+line-height: 16px;
+font-weight: 300;
+width: 48px;
+height: 16px;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 172px;
+display: block;
+margin: auto;
+border: 0;
+}
+.pricing-btn2.free{
+background: transparent linear-gradient(180deg, #959595 0%, #727272 100%) 0% 0% no-repeat padding-box;
+}
+.pricing-btn2.grow{
+background: transparent linear-gradient(180deg, #8FD2FF 0%, #5BB9F9 100%) 0% 0% no-repeat padding-box;
+}
+.pricing-btn2.professional{
+background: transparent linear-gradient(180deg, #79D980 0%, #5CB863 100%) 0% 0% no-repeat padding-box;
+}
+.pricing-btn2.business{
+background: transparent linear-gradient(180deg, #C365F6 0%, #A243D6 100%) 0% 0% no-repeat padding-box;
 }
