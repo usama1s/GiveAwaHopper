@@ -237,6 +237,28 @@ font-weight: 500;
   .all-p{
     font-size: 18px;
   }
+  .faq{
+
+    background: #F9F9F9;
+  }
+  .faq .card{
+  background: transparent;
+  box-shadow: 0px 3px 6px #00000029;
+
+  }
+  .faq .card{
+    margin-bottom: 14px;
+  }
+  .faq .card-header button{
+    padding: 0 21px;
+    font-weight: 300;
+  }
+  .faq .card-body{
+    padding: 25px;
+  }
+  .faq .card-header button::after{
+    color: #232323;
+  }
 }
 
 @media screen and  (min-width:992px) {

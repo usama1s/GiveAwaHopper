@@ -420,6 +420,7 @@ footer button.all-p i {
   font-size: 18px;
   line-height: 27px;
 font-weight: 500;
+color: #232323;
 }
 .text-20{
   font-size: 20px;
@@ -574,7 +575,7 @@ background: transparent linear-gradient(180deg, #BB5FEE 0%, #9A42CB 100%) 0% 0% 
 
 }
 .pricing-plan-des .row{
-  margin-top: 48px;
+  margin-top: 100px;
 }
 
 
@@ -646,8 +647,13 @@ background-image: url(../images/pricing/check-bussiness.png);
 .pricing-plan-des .pricing-item.free .brd{
   border-right: 1px solid #D6D6D6;
 }
-
-
+.pricing-plan-des{
+  padding-top: 130px;
+}
+.pricing-plan-des .all-h,
+.pricing-plan-des .all-p{
+  color: #232323;
+}
 
 .features {
   margin-bottom: 80px;
@@ -746,7 +752,7 @@ background-image: url(../images/pricing/check-bussiness.png);
 .faq{
   padding-top: 60px;
   padding-bottom: 80px;
-  background: #F9F9F9;
+  background: transparent;
 }
 .faq .all-p,
 .faq .text-18{
@@ -754,11 +760,13 @@ background-image: url(../images/pricing/check-bussiness.png);
 }
 .faq .card-header{
   background: #FEFEFE 0% 0% no-repeat padding-box;
+  border: 0;
 
 }
 .faq .card{
 background: transparent;
-box-shadow: 0px 3px 6px #00000029;
+border: 0;
+border-top: 1px solid #0000001A;
 
 }
 .faq .card-body{
@@ -767,17 +775,19 @@ box-shadow: 0px 3px 6px #00000029;
   color: #232323;
   line-height: 24px;
   font-weight: 300;
-  padding: 25px;
+  padding: 10px 0;
+
 }
 .faq .card-header button{
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 24px;
   color: #232323;
   min-height: 41px;
   position: relative;
-    padding: 0 21px;
+    padding: 0 0;
 }
+
 .faq .card-header button::after{
   font-family: "Font Awesome 5 Free";
   content: "\f078";
@@ -786,10 +796,38 @@ box-shadow: 0px 3px 6px #00000029;
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #232323;
+  color: #5CB863;
     font-size: 16px;
     font-weight: 900;
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+.faq .card-header button[aria-expanded="true"]::after{
+  transform: translateY(-50%) rotate(-180deg) ;
 }
 .faq .card{
-  margin-bottom: 14px;
+  margin-bottom: 0;
+}
+
+
+.send-msg a{
+  color: #5CB863;
+  font-weight: 600;
+}
+
+
+.stars>div{
+  width: 30px;
+height: 30px;
+margin: 2px;
+  background: #01B479 0% 0% no-repeat padding-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review .text-18.dd{
+  color: #30373A;
+}
+.review .text-18.dd span{
+  color: #959595;
 }
