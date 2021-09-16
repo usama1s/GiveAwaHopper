@@ -239,7 +239,7 @@ font-weight: 500;
   }
   .faq{
 
-    background: #F9F9F9;
+    /* background: #F9F9F9; */
   }
   .faq .card{
   background: transparent;
@@ -307,4 +307,13 @@ font-weight: 500;
 }
 }
 
-@media screen and  (min-width:767px) and (max-width:992px) {}
+@media screen and  (min-width:767px) and (max-width:992px) {
+  .pricing-plan-des .all-h{
+    font-size: 24px;
+    margin-bottom: 5px
+  }
+  .pricing-plan-des .row .col-4{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

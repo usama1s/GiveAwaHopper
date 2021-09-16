@@ -20,8 +20,9 @@ button, button:hover, button:active, button:visited, button:focus {
 a:hover{
   text-decoration: underline !important;
 }
+.w-f3,
 .w-f2,
-.w-f {
+.w-f{
   padding-left: 26px !important;
   padding-right: 26px;
   margin: auto;
@@ -33,6 +34,10 @@ a:hover{
 }
 .w-f2>*{
   max-width: 1300px;
+  margin: auto;
+}
+.w-f3>*{
+  max-width: 991px;
   margin: auto;
 }
 .g-btn {
@@ -407,9 +412,9 @@ footer button.all-p i {
   position: absolute;
   height: 7px;
   width: calc(100% + 4px);
-  left: 50%;
+  left: -2px;
   top: 0;
-  transform: translate(-50%,calc(-100% - 2px));
+  transform: translate(0,calc(-100% - 2px));
 }
 .pricing-plan-mob .pricing-item img{
   margin: auto;
@@ -420,11 +425,16 @@ footer button.all-p i {
 .pricing-plan-mob .pricing-item h2{
   margin-top: 28px;
 }
+.text-24,
 .text-18{
   font-size: 18px;
   line-height: 27px;
 font-weight: 500;
 color: #232323;
+}
+.text-24{
+  font-size: 24px;
+  line-height: 30px;
 }
 .text-20{
   font-size: 20px;
@@ -447,6 +457,8 @@ color: #FEFEFE;
 font-size: 16px;
 line-height: 24px;
 cursor: pointer;
+font-weight: 500;
+padding-top: 2px;
 }
 .pricing-plan-mob .pricing-item .pricing-btn{
   margin-top: 32px;
@@ -529,8 +541,8 @@ border-color: rgb(35, 35, 35);
  }
  .pricing-plan-mob .pricing-item.professional .b-top{
 
-/* background: transparent linear-gradient(180deg, #46E862 0%, #39C244 100%) 0% 0% no-repeat padding-box; */
-background: transparent linear-gradient(180deg, #75F27E 0%, #64CB6B 100%) 0% 0% no-repeat padding-box;
+background: transparent linear-gradient(180deg, #46E862 0%, #39C244 100%) 0% 0% no-repeat padding-box;
+/* background: transparent linear-gradient(180deg, #75F27E 0%, #64CB6B 100%) 0% 0% no-repeat padding-box; */
  }
  .pricing-plan-des .pricing-item.professional .b-top p{
    font-size: 16px;
@@ -582,7 +594,9 @@ background: transparent linear-gradient(180deg, #BB5FEE 0%, #9A42CB 100%) 0% 0% 
 .pricing-plan-des .row{
   margin-top: 100px;
 }
-
+.pricing-plan-mob .pricing-item h1{
+  font-weight: 600;
+}
 
 .pricing-plan-des ul{
 margin-top: 40px;
@@ -662,6 +676,7 @@ background-image: url(../images/pricing/check-bussiness.png);
 
 .features {
   /* margin-bottom: 80px; */
+  background: #F9F9F9;
 }
 .features ul{
   margin: 0;
@@ -670,7 +685,7 @@ background-image: url(../images/pricing/check-bussiness.png);
   font-weight: 300;
 }
 .features h1{
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 .features .nav{
   background: transparent;
@@ -736,6 +751,14 @@ background-image: url(../images/pricing/check-bussiness.png);
 }
 .features table {
   width: 100%;
+}
+.features table thead tr th,
+.features table tbody tr td{
+  width: 15%;
+}
+.features table thead tr th:nth-of-type(1),
+.features table tbody tr td:nth-of-type(1){
+  width: auto;
 }
 .features table thead th,
 .features table tbody td{
@@ -846,8 +869,8 @@ margin: 2px;
 .review .text-18.dd span{
   color: #959595;
 }
-.giveaway-hopper2 .all-h{
-  font-size: 18px !important;
+.giveaway-hopper2 h2{
+  color: #FEFEFE;
 }
 .pricing-btn2{
 color: #FEFEFE;
