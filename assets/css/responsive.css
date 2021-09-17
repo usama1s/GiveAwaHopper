@@ -95,7 +95,7 @@
   font-size: 18px;
   line-height: 27px;
 }
-.givaway-hopper .all-p{
+.givaway-hopper .default-t{
   font-size: 16px;
   line-height: 24px;
 }
@@ -134,10 +134,10 @@
   font-size: 24px;
   line-height: 30px;
 }
-.choose-giveaway h5{
+/* .choose-giveaway h5{
   font-size: 18px;
   line-height: 27px;
-}
+} */
 .all-p{
   font-size: 16px;
   line-height: 24px;
@@ -194,6 +194,11 @@
 
 
 @media screen and  (min-width:768px) {
+  .title{
+    font-size: 24px;
+    line-height: 32px;
+  }
+
   .nav {
     background-color: #252A25;
   }
@@ -234,12 +239,16 @@ font-weight: 500;
   footer>div>hr{
         margin: 40px 0;
   }
+
   .all-p{
     font-size: 18px;
   }
   .faq{
 
     /* background: #F9F9F9; */
+  }
+  .pricing-plan-mob .pricing-item{
+    margin: 10px 0;
   }
   .faq .card{
   background: transparent;
@@ -259,9 +268,28 @@ font-weight: 500;
   .faq .card-header button::after{
     color: #232323;
   }
+  .faq>div{
+    padding-left: 0 !important;
+    padding-right: 0!important;
+  }
 }
 
 @media screen and  (min-width:992px) {
+  .title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .sub-title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+}
+  .default-t{
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 27px;
+  }
   .banner{
     height: 707px;
     padding-top: 0;
@@ -305,6 +333,17 @@ font-weight: 500;
   line-height: 40px;
   text-align: center !important;
 }
+.pricing-plan-des ul li{
+  font-size: 16px;
+  line-height: 24px;
+}
+.pricing-plan-mob .pricing-item{
+  margin: 15px 0;
+}
+footer a {
+  font-size: 18px;
+  line-height: 27px;
+}
 }
 
 @media screen and  (min-width:767px) and (max-width:992px) {
@@ -312,7 +351,7 @@ font-weight: 500;
     font-size: 24px;
     margin-bottom: 5px
   }
-  .pricing-plan-des .row .col-4{
+  .pricing-plan-des .row>div{
     padding-left: 10px;
     padding-right: 10px;
   }

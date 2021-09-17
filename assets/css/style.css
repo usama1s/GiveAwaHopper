@@ -37,7 +37,7 @@ a:hover{
   margin: auto;
 }
 .w-f3>*{
-  max-width: 991px;
+  max-width: 840px;
   margin: auto;
 }
 .g-btn {
@@ -61,7 +61,24 @@ padding-right: 20px;
   background: transparent linear-gradient(180deg, #4B9B51 0%, #68DB7C 100%) 0% 0% no-repeat padding-box;
   transition: background 0.5s linear !important;
 }
-
+.title{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #232323;
+}
+.sub-title{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #232323;
+}
+.default-t{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #232323;
+}
 .all-h {
   color: #444445;
   font-size: 32px;
@@ -130,7 +147,7 @@ nav .nav-item {
 nav .nav-link {
   letter-spacing: 0px;
   color: #FEFEFE !important;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 21px;
   font-weight: 300;
   text-align: left;
@@ -212,7 +229,7 @@ nav .navbar-toggler h1 {
   background: #252A25;
 }
 
-.givaway-hopper .all-h {
+.givaway-hopper h2 {
   color: #FEFEFE !important;
 }
 
@@ -238,8 +255,8 @@ nav .navbar-toggler h1 {
   margin-top: 10px;
 }
 
-.givaway-hopper .all-p {
-  color: #FFFFFF;
+.givaway-hopper p {
+  color: #FFFFFF !important;
 }
 
 .givaway-hopper a {}
@@ -320,7 +337,7 @@ nav .navbar-toggler h1 {
   font-weight: 500;
 }
 
-.choose-giveaway a.btn.all-p {
+.choose-giveaway a.btn.default-t {
   background: #FEFEFE 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000026;
 }
@@ -350,7 +367,7 @@ footer hr {
 
 footer a {
   color: #232323;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 300;
 }
@@ -393,6 +410,15 @@ footer button.all-p i {
 
 
 /* pricing page */
+.pricing-page .title{
+  color: #444445;
+}
+.pricing-page .sub-title{
+  color: #232323;
+}
+.pricing-page .default-t{
+  color: #232323;
+}
 .pricing-plan-mob {
   padding-top: 48px;
 }
@@ -414,7 +440,12 @@ footer button.all-p i {
   width: calc(100% + 4px);
   left: -2px;
   top: 0;
-  transform: translate(0,calc(-100% - 2px));
+  transform: translate(0,calc(-100% - 1px));
+}
+.pricing-plan-mob h2 .title{
+  font-size: 24px !important;
+  font-weight: 600;
+color: #30373A;
 }
 .pricing-plan-mob .pricing-item img{
   margin: auto;
@@ -448,17 +479,16 @@ font-weight: 500;
 }
 .pricing-btn{
   background: #FEFEFE;
-box-shadow: 0px 3px 6px #00000029;
-height: 40px;
-/* border: 1px solid #46E862; */
-border: 0;
-padding: 0 22px;
-color: #FEFEFE;
-font-size: 16px;
-line-height: 24px;
-cursor: pointer;
-font-weight: 500;
-padding-top: 2px;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 40px;
+  border: 0;
+  padding: 0 22px;
+  color: #FEFEFE !important;
+  font-size: 16px;
+  line-height: 40px;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-block;
 }
 .pricing-plan-mob .pricing-item .pricing-btn{
   margin-top: 32px;
@@ -553,36 +583,36 @@ background: transparent linear-gradient(180deg, #46E862 0%, #39C244 100%) 0% 0% 
  .pricing-plan-mob .pricing-item.bussiness .b-top{
 background: transparent linear-gradient(180deg, #CD72FF 0%, #A243D6 100%) 0% 0% no-repeat padding-box;
  }
-.pricing-plan-mob .pricing-item.free button{
-  color: #232323;
+.pricing-plan-mob .pricing-item.free .pricing-btn{
+  color: #232323 !important;
 }
- .pricing-plan-mob .pricing-item.grow button{
+ .pricing-plan-mob .pricing-item.grow .pricing-btn{
    background: transparent linear-gradient(180deg, #85CCFC 0%, #52AAE6 100%) 0% 0% no-repeat padding-box;
  }
- .pricing-plan-mob .pricing-item.professional button{
+ .pricing-plan-mob .pricing-item.professional .pricing-btn{
 /* background: transparent linear-gradient(180deg, #46E862 0%, #39C244 100%) 0% 0% no-repeat padding-box; */
 background: transparent linear-gradient(180deg, #75F27E 0%, #64CB6B 100%) 0% 0% no-repeat padding-box;
  }
- .pricing-plan-mob .pricing-item.bussiness button{
+ .pricing-plan-mob .pricing-item.bussiness .pricing-btn{
 background: transparent linear-gradient(180deg, #BB5FEE 0%, #9A42CB 100%) 0% 0% no-repeat padding-box;
  }
  .pricing-plan-mob .pricing-item.free h1{
    color: rgb(35, 35, 35);;
  }
  .pricing-plan-mob .pricing-item.grow h1,
- .pricing-plan-des .pricing-item.grow p.all-p,
+ .pricing-plan-des .pricing-item.grow p.default-t,
  .pricing-plan-des .pricing-item.grow h2 span{
     color: #5BB9F9;
  }
 
  .pricing-plan-mob .pricing-item.professional h1,
- .pricing-plan-des .pricing-item.professional p.all-p,
+ .pricing-plan-des .pricing-item.professional p.default-t,
  .pricing-plan-des .pricing-item.professional h2 span{
     color: #5CB863;
  }
 
  .pricing-plan-mob .pricing-item.bussiness h1,
- .pricing-plan-des .pricing-item.bussiness p.all-p,
+ .pricing-plan-des .pricing-item.bussiness p.default-t,
  .pricing-plan-des .pricing-item.bussiness h2 span{
     color: #A243D6;
  }
@@ -723,8 +753,10 @@ background-image: url(../images/pricing/check-bussiness.png);
 .features .nav-tabs .nav-link[href="#business"]{
     color: #A243D6;
 }
-
-.features .tab-content .all-p{
+.features .nav-tabs .nav-link.active{
+  background: transparent !important;
+}
+.features .tab-content li{
   color: #30373A;
   line-height: 57px;
   padding: 0 17px;
@@ -736,7 +768,7 @@ background-image: url(../images/pricing/check-bussiness.png);
 }
 .features .tab-content ul li{
   list-style: none;
-  padding: 0;
+  /* padding: 0; */
 }
 .features table tbody tr:nth-of-type(2n),
 .features .tab-content ul li:nth-of-type(2n){
@@ -754,7 +786,7 @@ background-image: url(../images/pricing/check-bussiness.png);
 }
 .features table thead tr th,
 .features table tbody tr td{
-  width: 15%;
+  width: 16%;
 }
 .features table thead tr th:nth-of-type(1),
 .features table tbody tr td:nth-of-type(1){
@@ -791,6 +823,10 @@ background-image: url(../images/pricing/check-bussiness.png);
   padding-top: 60px;
   padding-bottom: 80px;
   background: transparent;
+}
+.faq>div{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .faq .all-p,
 .faq .text-18{
@@ -870,7 +906,7 @@ margin: 2px;
   color: #959595;
 }
 .giveaway-hopper2 h2{
-  color: #FEFEFE;
+  color: #FEFEFE !important;
 }
 .pricing-btn2{
 color: #FEFEFE;
