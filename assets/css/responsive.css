@@ -56,7 +56,7 @@
     background: #ffffff;
   }
 
-  nav .navbar-brand h5 {
+  .navbar-brand h5 {
     color: #232323;
   }
 
@@ -271,6 +271,23 @@ font-weight: 500;
   .faq>div{
     padding-left: 0 !important;
     padding-right: 0!important;
+  }
+
+  .login-form form{
+    max-width: 523px;
+  }
+  .login-footer p span{
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .login-footer p{
+    line-height: 22px;
+  }
+  .login-footer img{
+    height: 22px;
+  }
+  .login-footer{
+    padding-bottom: 30px;
   }
 }
 

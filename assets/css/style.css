@@ -16,6 +16,7 @@ input, input:hover, input:active, input:visited, input:focus,
 button, button:hover, button:active, button:visited, button:focus {
   text-decoration: none !important;
   outline: none !important;
+  box-shadow: none !important;
 }
 a:hover{
   text-decoration: underline !important;
@@ -125,12 +126,14 @@ nav {}
 nav .navbar-brand {
   margin-right: 50px;
 }
-
-nav .navbar-brand img {
+.navbar-brand:hover{
+  text-decoration: none !important;
+}
+.navbar-brand img {
   width: 17px;
 }
 
-nav .navbar-brand h5 {
+.navbar-brand h5 {
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -932,4 +935,156 @@ background: transparent linear-gradient(180deg, #79D980 0%, #5CB863 100%) 0% 0% 
 }
 .pricing-btn2.business{
 background: transparent linear-gradient(180deg, #C365F6 0%, #A243D6 100%) 0% 0% no-repeat padding-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* login page */
+.login-nav{
+  height: 68px;
+  background: #252A25 0% 0% no-repeat padding-box;
+  width: 100%;
+  padding: 0 22px;
+
+}
+.login-nav img{
+  width: 17px;
+}
+.login-title{
+  padding-top: 128px;
+}
+.login-title .title{
+  font-weight: lighter;
+}
+.login-title a{
+  color: #5CB863;
+  /* font-weight: lighter; */
+}
+.login-title a span{
+  color: #A243D6;
+}
+
+.login-form-2,
+.login-form{
+  min-height: 650px;
+}
+.login-form form{
+  max-width: 360px;
+}
+.login-form input{
+  border: 0;
+  border-bottom: 1px solid #959595;
+  line-height: 22px;
+  padding: 3px 0;
+}
+.login-form input::placeholder{
+  font-size: 16px;
+  color: #959595;
+}
+.login-form .form-check input{
+  width: 16px;
+  height: 16px;
+}
+.login-form .g-btn{
+  width: 194px;
+  height: 40px;
+}
+.login-form p a{
+  font-weight: 600;
+}
+.login-form p a:hover{
+  color: #232323 !important;
+}
+.login-form .form-broup{
+
+}
+.login-form label{
+
+}
+.signup-form .form-check{
+  max-width: 332px;
+}
+.signup-form .form-check label a{
+  text-decoration: underline !important;
+  color: #232323 !important;
+  font-weight: 400;
+}
+.login-footer{
+  padding-bottom: 18px;
+}
+.login-footer p{
+  line-height: 19px;
+}
+.login-footer p span{
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 19px;
+}
+.login-footer img{
+  margin-left: 11px;
+  margin-right: 7px;
+  height: 19px;
+}
+
+.login-form-2 a{
+  height: 34px;
+  box-shadow: 0px 0px 6px #00000026 !important;
+border-radius: 3px;
+padding: 2px 15px;
+width: fit-content;
+color: #757575;
+}
+.login-form-2 a:hover{
+  text-decoration: none !important;
+}
+.login-form-2 a svg{
+  height: 11px;
+  fill : #757575;
+}
+.login-form-2 button{
+border-radius: 3px;
+box-shadow: 0px 0px 6px #00000026;
+max-width: 332px;
+width: 100%;
+border: 0;
+height: 47px;
+cursor: pointer;
+margin-bottom: 9px;
+}
+.login-form-2 button span{
+  display: block;
+  width: 62px;
+  text-align: center;
+}
+.login-form-2 button span svg{
+Fill: #FFFFFF;
+}
+.login-form-2 button p{
+  color: #FEFEFE;
+}
+.login-form-2 button.google{
+  background: #CF4332 0% 0% no-repeat padding-box;
+}
+.login-form-2 button.instagram{
+  background: #E1306C 0% 0% no-repeat padding-box;
+}
+.login-form-2 button.facebook{
+  background: #4267B2 0% 0% no-repeat padding-box;
+}
+.login-form-2 button.twitter{
+  background: #1DA1F2 0% 0% no-repeat padding-box;
+}
+.login-form-2 button.steam{
+  background: #171A21 0% 0% no-repeat padding-box;
 }
