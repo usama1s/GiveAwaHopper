@@ -987,6 +987,10 @@ background: transparent linear-gradient(180deg, #C365F6 0%, #A243D6 100%) 0% 0% 
   border-bottom: 1px solid #959595;
   line-height: 22px;
   padding: 3px 0;
+  border-radius: 0;
+}
+.login-form input:focus{
+  border-color: #68DB7C;
 }
 .login-form input::placeholder{
   font-size: 16px;
@@ -1014,6 +1018,36 @@ background: transparent linear-gradient(180deg, #C365F6 0%, #A243D6 100%) 0% 0% 
 }
 .signup-form .form-check{
   max-width: 332px;
+}
+.login-form .form-check input{
+  display: none;
+}
+.login-form .form-check input+.custom-label{
+  width: 16px;
+  height: 16px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #232323;
+position: absolute;
+left: 0;
+top: 5px;
+margin: 0;
+}
+.login-form .form-check input+.custom-label i{
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+  font-size: 11px;
+  color: white;
+  visibility: hidden;
+}
+.login-form .form-check input:checked+.custom-label{
+  background: #68DB7C;
+  border-color: #68DB7C;
+}
+.login-form .form-check input:checked+.custom-label i{
+  /* display: block; */
+  visibility: visible;
 }
 .signup-form .form-check label a{
   text-decoration: underline !important;
