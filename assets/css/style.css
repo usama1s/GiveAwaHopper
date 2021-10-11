@@ -951,6 +951,11 @@ background: transparent linear-gradient(180deg, #C365F6 0%, #A243D6 100%) 0% 0% 
 
 
 /* login page */
+.spc-body{
+  min-height: 100vh;
+  padding-bottom:80px;
+  position: relative;
+}
 .login-nav{
   height: 68px;
   background: #252A25 0% 0% no-repeat padding-box;
@@ -977,10 +982,14 @@ background: transparent linear-gradient(180deg, #C365F6 0%, #A243D6 100%) 0% 0% 
 
 .login-form-2,
 .login-form{
-  min-height: 650px;
+  /* min-height: 650px; */
 }
 .login-form form{
   max-width: 360px;
+}
+.login-form label sup{
+  color: red;
+  font-size: 16px;
 }
 .login-form input{
   border: 0;
@@ -1056,6 +1065,9 @@ margin: 0;
 }
 .login-footer{
   padding-bottom: 18px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .login-footer p{
   line-height: 19px;
@@ -1078,12 +1090,13 @@ border-radius: 3px;
 padding: 2px 15px;
 width: fit-content;
 color: #757575;
+    min-width: 223px;
 }
 .login-form-2 a:hover{
   text-decoration: none !important;
 }
 .login-form-2 a svg{
-  height: 11px;
+  height: 14px;
   fill : #757575;
 }
 .login-form-2 button{
