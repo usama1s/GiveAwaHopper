@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/js/slick-master/slick/slick.css">
+  <link rel="stylesheet" href="assets/js/slick-master/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <title></title>
+</head>
+
+<body>
+  <section class="top-nav d-none d-lg-block w-f">
+
+    <div class="d-flex justify-content-center text-center">
+      <div class="px-3">
+        <p>Sign up for free</p>
+      </div>
+      <p>|</p>
+      <div class="px-3">
+        <p>No creditcard required</p>
+      </div>
+      <p>|</p>
+      <div class="px-3">
+        <p>Physical & digital giveaways</p>
+      </div>
+      <p>|</p>
+      <div class="px-3">
+        <p>No coding or design skills required</p>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+  <section class="nav w-f">
+
+    <nav class="navbar navbar-expand-md navbar-dark w-100 ">
+      <a class="navbar-brand d-flex align-items-center " href="#">
+        <img class="" src="assets/images/logo.png">
+        <h5> Giveawayhopper</h5>
+      </a>
+      <button class="navbar-toggler d-md-none d-flex align-items-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <h1 class="">Menu</h1>
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link " aria-current="page" href="#">Home </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Learn
+              <svg xmlns="http://www.w3.org/2000/svg" height="11" viewBox="0 0 24 24">
+                <path fill="white" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+              </svg>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="assets/images/svgs/user-m.svg" alt=""> Acount
+              <svg xmlns="http://www.w3.org/2000/svg" height="11" viewBox="0 0 24 24">
+                <path fill="white" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
+              </svg>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="#">Settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </section>
+
+
+  <section class="dashboard">
+    <header>
+      <div class="">
+        <div class="d-flex align-items-center justify-content-center">
+          <img src="assets/images/svgs/user-m.svg" alt="">
+        </div>
+
+
+      </div>
+      <h1 class="sub-title">Jochum Beerepoot</h1>
+
+      <button class="dashboard-nav-btn d-block d-md-none mx-auto" onclick="toggleDashboardTab()" id="changeNavBtn">
+        <a class="nav-link d-flex active show">
+          <img src="assets/images/svgs/user.svg" alt="">
+          <img src="assets/images/svgs/user-thick.svg" alt="">
+          My Account
+        </a>
+        <svg xmlns="http://www.w3.org/2000/svg" height="11" viewBox="0 0 24 24" style="
+">
+          <path fill="#232323" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
+        </svg>
+      </button>
+
+      <ul class="nav nav-tabs justify-content-center py-0 bg-transparent d-none d-md-flex" id="dashboard-nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link d-flex active show" data-toggle="tab" href="#account" onclick="changeNavTabinBtn(this);">
+            <img src="assets/images/svgs/user.svg" alt="">
+            <img src="assets/images/svgs/user-thick.svg" alt="">
+            My Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex " data-toggle="tab" href="#connections" onclick="changeNavTabinBtn(this);">
+            <img src="assets/images/svgs/connection.svg" alt="">
+            <img src="assets/images/svgs/connection-thick.svg" alt="">
+            Connections
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex" data-toggle="tab" href="#prizes" onclick="changeNavTabinBtn(this);">
+            <img src="assets/images/svgs/prizes.svg" alt="">
+            <img src="assets/images/svgs/prizes-thick.svg" alt="">
+            Prizes
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex" data-toggle="tab" href="#activity" onclick="changeNavTabinBtn(this);">
+            <img src="assets/images/svgs/activity.svg" alt="">
+            <img src="assets/images/svgs/activity-thick.svg" alt="">
+            Activity
+          </a>
+        </li>
+      </ul>
+    </header>
+
+
+    <!-- Tab panes -->
+    <div class="tab-content ">
+      <div id="account" class="tab-pane fade active show">
+        <h1 class="title text-center">Account Details</h1>
+        <p class="default-t text-center mb-4">Your personal Sirmo account details</p>
+        <div class="login-form dashboard-form w-f d-non">
+          <form class="" action="index.html" method="post">
+            <div class="row">
+              <div class="col-lg-12 col-md-6">
+                <div class="form-group mb-4 pb-2">
+                  <label for="name" class="default-t mb-1">First name</label>
+                  <input type="text" class="form-control" id="name" placeholder="James">
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-6">
+                <div class="form-group mb-4 pb-2">
+                  <label for="last-name" class="default-t mb-1">Last name</label>
+                  <input type="text" class="form-control" id="last-name" placeholder="Carpenter">
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group mb-4 pb-2">
+              <label for="email" class="default-t mb-1">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="jamescarpenter@gmail.com">
+            </div>
+
+            <div class="mt-5 pt-2">
+              <button type="button" class="default-t mx-auto d-block edit-btn" name="button">Edit</button>
+            </div>
+
+          </form>
+        </div>
+
+        <div class="tab-plan w-f mt-5 pt-5">
+          <h1 class="sub-title text-center">Your Plan</h1>
+          <p class="text-center">Your current pricing plan</p>
+          <div class="mt-4">
+            <div class="row">
+              <div class="col-md-4 col-sm-6  imgg">
+                <img src="assets/images/dashboard/bussiness-plan.svg" alt="">
+              </div>
+              <div class="col-md-4 col-sm-6  detail d-flex align-items-center">
+                <div class="">
+                  <h1 class="sub-title ">Business Plan</h1>
+                  <p class=" mb-0"> <span class="default-t mb-0">$</span> <span class="sub-title mb-0">89,99</span> <span class="default-t mb-0">/mo</span> </p>
+                  <p class="default-t mb-0"> + $0,005 /participant</p>
+                </div>
+
+              </div>
+              <div class="col-md-4 col-12 btns d-flex align-items-center">
+                <div class=" mx-auto py-4">
+                  <button class="d-block border-0 default-t " type="button" name="button">Upgrade Plan</button>
+                  <button class="d-block default-t bg-transparent border-0 text-center" type="button" name="button">Cancel Plan</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="notifications-table text-center w-f mt-5 pt-5">
+          <h1 class="sub-title d-none d-md-block ">Notifications</h1>
+          <h1 class="sub-title d-block d-md-none mb-3 ">Email Notifications</h1>
+
+          <p class="default-t d-none d-md-block">Your email notification preferences</p>
+          <p class="default-t d-block d-md-none mb-2">General Notifications</p>
+
+          <table>
+            <thead class="w-100">
+              <tr>
+                <th>System Notifications</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Raffle prize notifications</td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td>Campaign Deletion Notification</td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td>Campaign Expiring Notification</td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td> <img src="assets/images/dashboard/cross.svg" alt=""> </td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td> <img src="assets/images/dashboard/cross.svg" alt=""> </td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td> <img src="assets/images/dashboard/cross.svg" alt=""> </td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td> <img src="assets/images/dashboard/cross.svg" alt=""> </td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- <p class="default-t d-none d-md-block">Your email notification preferences</p> -->
+          <p class="default-t d-block d-md-none mb-2">Customer Notifications</p>
+
+          <table>
+            <thead class="w-100">
+              <tr>
+                <th>Customer Notifications</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Product & Service Updates</td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td>Campaign Deletion Notification</td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td>Campaign Expiring Notification</td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td> <img src="assets/images/dashboard/cross.svg" alt=""> </td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td> <img src="assets/images/dashboard/cross.svg" alt=""> </td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td> <img src="assets/images/dashboard/cross.svg" alt=""> </td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+              <tr>
+                <td> <img src="assets/images/dashboard/cross.svg" alt=""> </td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <p class="default-t d-block d-md-none mb-2">Newsletter Notification</p>
+
+          <table>
+            <thead class="w-100">
+              <tr>
+                <th>Newsletter Notification</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>Newsletter Notification</td>
+                <td> <img src="assets/images/dashboard/tick.svg" alt=""> </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+
+          <button class="edit-btn mt-5 mb-5" type="button" name="button">Edit</button>
+
+
+          <a class="d-block text-center default-t mt-5" href="#">Advanced Settings <img class="ml-2" src="assets/images/svgs/arrow-b.svg" alt=""> </a>
+          <a class="d-block text-center default-t mt-4" href="#">Deactivate your account </a>
+        </div>
+
+      </div>
+      <div id="connections" class="tab-pane text-center fade ">
+        <h1 class="sub-title">Connect more accounts</h1>
+        <p class="default-t">Connect more other social media accounts</p>
+
+        <div class="social-icons pb-5 d-flex justify-content-center">
+          <div class="pinterest">
+            <img src="assets/images/dashboard/pinterest.svg" alt="">
+          </div>
+          <div class="instagram">
+            <img src="assets/images/dashboard/instagram.svg" alt="">
+          </div>
+          <div class="facebook">
+            <img src="assets/images/dashboard/facebook.svg" alt="">
+          </div>
+          <div class="soundcloud">
+            <img src="assets/images/dashboard/soundcloud.svg" alt="">
+          </div>
+          <div class="spotify">
+            <img src="assets/images/dashboard/spotify.svg" alt="">
+          </div>
+        </div>
+
+        <h1 class="sub-title mt-5">Connected accounts</h1>
+        <p class="default-t">Connect more other social media accounts</p>
+
+
+        <div class="connected-accounts w-f ">
+          <div class="">
+            <div class="icon youtube">
+              <img src="assets/images/dashboard/youtube.svg" alt="">
+            </div>
+            <div class="detail text-left">
+              <h1 class="default-t m-0">jochumjur@gmail.com</h1>
+              <p class="default-t">Youtube (Google)</p>
+            </div>
+            <a class="close" href="#"> <span></span> </a>
+          </div>
+          <div class="">
+            <div class="icon steam">
+              <img src="assets/images/dashboard/youtube.svg" alt="">
+            </div>
+            <div class="detail text-left">
+              <h1 class="default-t m-0">SirGoose</h1>
+              <p class="default-t">Steam</p>
+            </div>
+            <a class="close" href="#"> <span></span> </a>
+          </div>
+          <div class="">
+            <div class="icon twitter">
+              <img src="assets/images/dashboard/youtube.svg" alt="">
+            </div>
+            <div class="detail text-left">
+              <h1 class="default-t m-0">SGTTB_SirGoose</h1>
+              <p class="default-t">Twitter</p>
+            </div>
+            <a class="close" href="#"> <span></span> </a>
+          </div>
+        </div>
+
+      </div>
+      <div id="prizes" class=" tab-pane fade">
+        <div class="w-f">
+          <div class="prizes-list">
+            <div class="">
+              <button class="collapsed default-t connected-accounts w-100 border-0" data-toggle="collapse" data-target="#prize1" aria-expanded="false" aria-controls="other">
+                <div class="m-0">
+                  <div class="icon">
+                    <img src="assets/images/dashboard/1.png" alt="">
+                  </div>
+                  <div class="detail text-left">
+                    <h1 class="default-t m-0">jochumjur@gmail.com</h1>
+                    <p class="default-t">Youtube (Google)</p>
+                  </div>
+                  <i class="close fas fa-angle-down"></i>
+                </div>
+              </button>
+              <div class="collapse" id="prize1" aria-labelledby="prize1" data-parent="#prizes">
+                <div class="slider prize-slider">
+                  <div class="prize-item text-center py-3">
+                    <h1 class="default-t mt-3">Your Prize</h1>
+                    <h2 class="default-t">'Mini Cooper' giveaway and prize details</h2>
+                    <h2 class="default-t mt-3"> You won:</h2>
+                    <h3 class="sub-title">1x Mini Cooper</h3>
+                    <h2 class="default-t mt-3"> Your prize:</h2>
+                    <h3 class="sub-title">SWER-SDFJ-XDFS</h3>
+                  </div>
+                  <div class="prize-item text-center py-3">
+                    <h1 class="default-t mt-3">Your Prize</h1>
+                    <h2 class="default-t">'Mini Cooper' giveaway and prize details</h2>
+                    <div class="row text-left">
+                      <div class="col-lg-9 col-md-10 col-sm-10 col-11 mx-auto">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h4 class="default-t d-inline-block">Your Prize: </h4> <h2 class="default-t d-inline-block">Sirmo V.O.F</h2> <br>
+                            <h4 class="default-t d-inline-block">Date of Start: </h4> <h2 class="default-t d-inline-block">12/10/2021</h2> <br>
+                            <h4 class="default-t d-inline-block">Date of End: </h4> <h2 class="default-t d-inline-block">12/10/2021 (30)</h2> <br>
+                          </div>
+                          <div class="col-md-6">
+                            <h4 class="default-t d-inline-block">Prize name: </h4> <h2 class="default-t d-inline-block">Mini Cooper</h2> <br>
+                            <h4 class="default-t d-inline-block">Prize type: </h4> <h2 class="default-t d-inline-block">Physical Prize</h2> <br>
+                            <h4 class="default-t d-inline-block">Distribution Method: </h4> <h2 class="default-t d-inline-block">Manually (email)</h2> <br>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <button class="collapsed default-t connected-accounts w-100 border-0" data-toggle="collapse" data-target="#prize2" aria-expanded="false" aria-controls="other">
+                <div class="m-0">
+                  <div class="icon">
+                    <img src="assets/images/dashboard/1.png" alt="">
+                  </div>
+                  <div class="detail text-left">
+                    <h1 class="default-t m-0">jochumjur@gmail.com</h1>
+                    <p class="default-t">Youtube (Google)</p>
+                  </div>
+                  <i class="close fas fa-angle-down"></i>
+                </div>
+              </button>
+              <div class="collapse" id="prize2" aria-labelledby="prize2" data-parent="#prizes">
+                <div class="slider prize-slider">
+                  <div class="prize-item text-center py-3">
+                    <h1 class="default-t mt-3">Your Prize</h1>
+                    <h2 class="default-t">'Mini Cooper' giveaway and prize details</h2>
+                    <h2 class="default-t mt-3"> You won:</h2>
+                    <h3 class="sub-title">1x Mini Cooper</h3>
+                    <h2 class="default-t mt-3"> Your prize:</h2>
+                    <h3 class="sub-title">SWER-SDFJ-XDFS</h3>
+                  </div>
+                  <div class="prize-item text-center py-3">
+                    <h1 class="default-t mt-3">Your Prize</h1>
+                    <h2 class="default-t">'Mini Cooper' giveaway and prize details</h2>
+                    <div class="row text-left">
+                      <div class="col-lg-9 col-md-10 col-sm-10 col-11 mx-auto">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h4 class="default-t d-inline-block">Your Prize: </h4> <h2 class="default-t d-inline-block">Sirmo V.O.F</h2> <br>
+                            <h4 class="default-t d-inline-block">Date of Start: </h4> <h2 class="default-t d-inline-block">12/10/2021</h2> <br>
+                            <h4 class="default-t d-inline-block">Date of End: </h4> <h2 class="default-t d-inline-block">12/10/2021 (30)</h2> <br>
+                          </div>
+                          <div class="col-md-6">
+                            <h4 class="default-t d-inline-block">Prize name: </h4> <h2 class="default-t d-inline-block">Mini Cooper</h2> <br>
+                            <h4 class="default-t d-inline-block">Prize type: </h4> <h2 class="default-t d-inline-block">Physical Prize</h2> <br>
+                            <h4 class="default-t d-inline-block">Distribution Method: </h4> <h2 class="default-t d-inline-block">Manually (email)</h2> <br>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+      <div id="activity" class=" tab-pane fade">
+        <div class="w-f text-center">
+          <h1 class="sub-title">Activity</h1>
+          <p class="default-t">Your user activity on Giveawayhopper</p>
+          <table class="activity-table">
+            <thead>
+              <tr>
+                <th>Action</th>
+                <th>Description</th>
+                <th>Webpage</th>
+                <th>Date and Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Giveaway campaign joined</td>
+                <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
+                <td> <a href="#">Link</a> </td>
+                <td>28/07/2021 10:49 pm CEST</td>
+                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+              </tr>
+              <tr>
+                <td>Freebie campaign joined</td>
+                <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
+                <td> <a href="#">Link</a> </td>
+                <td>27/07/2021 2:12 pm CEST</td>
+                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+              </tr>
+              <tr>
+                <td>Connection added</td>
+                <td> Twitter </td>
+                <td> N/A </td>
+                <td>24/07/2021 8:42 am CEST</td>
+                <!-- <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td> -->
+              </tr>
+              <tr>
+                <td>Giveaway campaign joined</td>
+                <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
+                <td> <a href="#">Link</a> </td>
+                <td>28/07/2021 10:49 pm CEST</td>
+                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+              </tr>
+              <tr>
+                <td>Giveaway campaign joined</td>
+                <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
+                <td> <a href="#">Link</a> </td>
+                <td>28/07/2021 10:49 pm CEST</td>
+                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+              </tr>
+              <tr>
+                <td>Freebie campaign joined</td>
+                <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
+                <td> <a href="#">Link</a> </td>
+                <td>27/07/2021 2:12 pm CEST</td>
+                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+              </tr>
+              <tr>
+                <td>Connection added</td>
+                <td> Twitter </td>
+                <td> N/A </td>
+                <td>24/07/2021 8:42 am CEST</td>
+                <!-- <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td> -->
+              </tr>
+              <tr>
+                <td>Giveaway campaign joined</td>
+                <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
+                <td> <a href="#">Link</a> </td>
+                <td>28/07/2021 10:49 pm CEST</td>
+                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+              </tr>
+              <tr>
+                <td>Giveaway campaign joined</td>
+                <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
+                <td> <a href="#">Link</a> </td>
+                <td>28/07/2021 10:49 pm CEST</td>
+                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+              </tr>
+              <tr>
+                <td>Giveaway campaign joined</td>
+                <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
+                <td> <a href="#">Link</a> </td>
+                <td>28/07/2021 10:49 pm CEST</td>
+                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pagination mt-5">
+          <a href="#" class="default-t disabled">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7.5" height="12" viewBox="0 0 7.5 12">
+            <path id="iconmonstr-arrow-25" d="M0,1.5,1.529,0,7.5,6,1.529,12,0,10.5,4.5,6Z" transform="translate(7.5 12) rotate(180)" fill="#222622" opacity="0.6"/>
+          </svg>
+          </a>
+          <a href="#" class="default-t ">1</a>
+          <a href="#" class="default-t active">2</a>
+          <a href="#" class="default-t ">3</a>
+
+          <a href="#" class="default-t ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="7.5" height="12" viewBox="0 0 7.5 12">
+              <path id="iconmonstr-arrow-25" d="M0,1.5,1.529,0,7.5,6,1.529,12,0,10.5,4.5,6Z" fill="#222622" opacity="0.6"/>
+            </svg>
+
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="assets/js/slick-master/slick/slick.min.js"></script>
+  <!-- <script src="assets/js/customSlick.js" type="text/javascript"></script> -->
+
+  <script type="text/javascript">
+    function toggleDashboardTab() {
+      $('#dashboard-nav-tabs').toggleClass("show-tabs");
+    }
+
+    function changeNavTabinBtn(el) {
+      $('#dashboard-nav-tabs').removeClass("show-tabs");
+      $('#changeNavBtn a').html($(el).html());
+    }
+
+
+    $(document).ready(function() {
+      // $('.demo').slick();
+      $('.prize-slider').slick({
+        draggable: false,
+        speed: 500,
+        dots: true,
+        arrows: true,
+        prevArrow: '<div class="slick-prev"><i class="fas fa-chevron-left"></i></div>',
+        nextArrow: '<div class="slick-next"><i class="fas fa-chevron-right"></i></div>',
+
+
+
+
+      });
+    });
+
+
+
+  </script>
+</body>
+
+</html>

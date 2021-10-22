@@ -156,6 +156,35 @@
   footer{
     padding-bottom: 0;
   }
+  .activity-table{
+    margin-top: 48px;
+  }
+  .activity-table tr a,
+  .activity-table td{
+    font-size: 16px;
+  }
+  .activity-table tr {
+    padding: 0 10px;
+  }
+  .activity-table tr td{
+    display: table-row;
+    line-height: 31px;
+    height: 31px;
+    border-left: 10px solid #F1F5F9;
+    text-align: left;
+  }
+  .activity-table tr:nth-of-type(odd) td{
+    border-left-color: white;
+  }
+  .activity-table tr td:nth-of-type(2),
+  .activity-table tr td:nth-of-type(3),
+.activity-table thead{
+  display: none;
+}
+.activity-table .share{
+  display: block;
+}
+
 }
 
 @media screen and (max-width:576px) {
@@ -289,6 +318,15 @@ font-weight: 500;
   .login-footer{
     /* padding-bottom: 30px; */
   }
+  .notifications-table table td{
+  font-size: 18px;
+  }
+  .notifications-table table tbody tr td{
+    padding: 0 34px;
+  }
+  .notifications-table table thead{
+    display: table-header-group;
+  }
 }
 
 @media screen and  (min-width:992px) {
@@ -302,6 +340,7 @@ font-weight: 500;
     line-height: 32px;
     font-weight: 500;
 }
+
   .default-t{
     font-size: 18px;
     font-weight: 200;
@@ -361,6 +400,21 @@ footer a {
   font-size: 18px;
   line-height: 27px;
 }
+.dashboard-form form{
+  max-width: 523px !important;
+}
+.dashboard-form input {
+    border: 0;
+    border-bottom: 1px solid #959595;
+    line-height: 22px;
+    padding: 3px 0;
+    border-radius: 0;
+
+}
+#dashboard-nav-tabs.show-tabs{
+
+}
+
 }
 
 @media screen and  (min-width:767px) and (max-width:992px) {
@@ -371,5 +425,69 @@ footer a {
   .pricing-plan-des .row>div{
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+
+@media screen and (max-width:576px) {
+  .tab-plan .row img{
+    width: 100%;
+  }
+  .tab-plan .row .imgg{
+    max-width: 137px;
+    min-width: 137px;
+    display: flex;
+    align-items: center;
+  }
+  .tab-plan .row .detail{
+    /* max-width: 100%;
+    min-width: 100%; */
+    width: calc(100% - 137px);
+  }
+  .tab-plan p,
+  .tab-plan p span{
+  color: #30373A !important;
+}
+.tab-plan p span.sub-title{
+  font-size: 24px;
+}
+.tab-plan .btns>div{
+  padding-bottom: 0 !important;
+  padding-top: 40px !important;
+}
+}
+
+
+@media screen and (max-width:767px){
+  #dashboard-nav-tabs.show-tabs{
+    display: flex !important;
+    position: absolute;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin:0;
+    /* width: 80%; */
+    background: white;
+    z-index: 10;
+    width: 302px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  }
+  #dashboard-nav-tabs.show-tabs .nav-item{
+    background: white;
+  }
+
+  .notifications-table .sub-title{
+    font-weight: 600;
+  }
+  .notifications-table table th:nth-of-type(2),
+  .notifications-table table td:nth-of-type(2){
+    width: 60px;
+  }
+  .notifications-table table:nth-last-of-type(1) tr{
+    background: #F1F5F9 0% 0% no-repeat padding-box;
+  }
+  .prizes-list .prize-item h4{
+    font-weight: 400;
   }
 }
