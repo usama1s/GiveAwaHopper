@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <section class="top-nav d-none d-lg-block w-f">
+  <section class="top-nav d-none d-lg-block w-f3">
 
     <div class="d-flex justify-content-center text-center">
       <div class="px-3">
@@ -47,7 +47,7 @@
 
 
 
-  <section class="nav w-f">
+  <section class="dashboard-nav nav w-f3">
 
     <nav class="navbar navbar-expand-md navbar-dark w-100 ">
       <a class="navbar-brand d-flex align-items-center " href="#">
@@ -83,18 +83,38 @@
           </li>
         </ul>
         <ul class="navbar-nav">
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown dashboard-dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="assets/images/svgs/user-m.svg" alt=""> Acount
+              <img src="assets/images/svgs/user-m.svg" alt=""> Account
               <svg xmlns="http://www.w3.org/2000/svg" height="11" viewBox="0 0 24 24">
                 <path fill="white" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
               </svg>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Profile</a>
-              <a class="dropdown-item" href="#">Settings</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Logout</a>
+            <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" data-toggle="tab" for="account-btn" href="#account" onclick="changeNavTabinBtn(this);">
+                <span class="mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 24 24"><path d="M20.822 18.096c-3.439-.794-6.641-1.49-5.09-4.418 4.719-8.912 1.251-13.678-3.732-13.678-5.082 0-8.465 4.949-3.732 13.678 1.598 2.945-1.725 3.641-5.09 4.418-2.979.688-3.178 2.143-3.178 4.663l.005 1.241h1.995c0-3.134-.125-3.55 1.838-4.003 2.851-.657 5.543-1.278 6.525-3.456.359-.795.592-2.103-.338-3.815-2.058-3.799-2.578-7.089-1.423-9.026 1.354-2.275 5.426-2.264 6.767-.034 1.15 1.911.639 5.219-1.403 9.076-.91 1.719-.671 3.023-.31 3.814.99 2.167 3.707 2.794 6.584 3.458 1.879.436 1.76.882 1.76 3.986h1.995l.005-1.241c0-2.52-.199-3.975-3.178-4.663z"/></svg>
+                </span>
+                My Account
+              </a>
+              <a class="dropdown-item" data-toggle="tab" for="connection-btn" href="#connections" onclick="changeNavTabinBtn(this);">
+                <span class="mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 24 24"><path d="M5 9c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm0-2c-2.762 0-5 2.239-5 5s2.238 5 5 5 5-2.239 5-5-2.238-5-5-5zm15 9c-1.165 0-2.204.506-2.935 1.301l-5.488-2.927c-.23.636-.549 1.229-.944 1.764l5.488 2.927c-.072.301-.121.611-.121.935 0 2.209 1.791 4 4 4s4-1.791 4-4-1.791-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2zm0-22c-2.209 0-4 1.791-4 4 0 .324.049.634.121.935l-5.488 2.927c.395.536.713 1.128.944 1.764l5.488-2.927c.731.795 1.77 1.301 2.935 1.301 2.209 0 4-1.791 4-4s-1.791-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"/></svg>
+                </span>
+                Connections
+              </a>
+              <a class="dropdown-item" data-toggle="tab" for="prizes-btn" href="#prizes" onclick="changeNavTabinBtn(this);">
+                <span class="mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16.3" viewBox="0 0 24 24"><path d="M17.369 0c-2.947 0-4.671 3.478-5.369 5h5.345c3.493 0 3.53-5 .024-5zm-.796 3.621h-2.043c.739-1.121 1.438-1.966 2.342-1.966 1.172 0 1.228 1.966-.299 1.966zm-9.918 1.379h5.345c-.698-1.522-2.422-5-5.369-5-3.506 0-3.469 5 .024 5zm.473-3.345c.903 0 1.603.845 2.342 1.966h-2.043c-1.527 0-1.471-1.966-.299-1.966zm16.872 4.345h-24v6h1.056v12h21.889v-12h1.055v-6zm-13 16h-8v-10h8v10zm0-12h-9v-2h9v2zm2-2h9v2h-9v-2zm8 14h-8v-10h8v10z"/></svg>
+                </span>
+                Prizes
+              </a>
+              <a class="dropdown-item" data-toggle="tab" for="activity-btn" href="#activity" onclick="changeNavTabinBtn(this);">
+                <span class="mr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 24 24"><path d="M4 22v-20h16v11.543c0 4.107-6 2.457-6 2.457s1.518 6-2.638 6h-7.362zm18-7.614v-14.386h-20v24h10.189c3.163 0 9.811-7.223 9.811-9.614zm-5-1.386h-10v-1h10v1zm0-4h-10v1h10v-1zm0-3h-10v1h10v-1z"/></svg>
+                </span>
+                Activity
+              </a>
             </div>
           </li>
         </ul>
@@ -129,27 +149,27 @@
 
       <ul class="nav nav-tabs justify-content-center py-0 bg-transparent d-none d-md-flex" id="dashboard-nav-tabs">
         <li class="nav-item">
-          <a class="nav-link d-flex active show" data-toggle="tab" href="#account" onclick="changeNavTabinBtn(this);">
+          <a class="nav-link d-flex active show" id="account-btn" data-toggle="tab" href="#account" onclick="changeNavTabinBtn(this);">
             <img src="assets/images/svgs/user.svg" alt="">
             <img src="assets/images/svgs/user-thick.svg" alt="">
             My Account</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex " data-toggle="tab" href="#connections" onclick="changeNavTabinBtn(this);">
+          <a class="nav-link d-flex" id="connection-btn" data-toggle="tab" href="#connections" onclick="changeNavTabinBtn(this);">
             <img src="assets/images/svgs/connection.svg" alt="">
             <img src="assets/images/svgs/connection-thick.svg" alt="">
             Connections
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex" data-toggle="tab" href="#prizes" onclick="changeNavTabinBtn(this);">
+          <a class="nav-link d-flex" id="prizes-btn" data-toggle="tab" href="#prizes" onclick="changeNavTabinBtn(this);">
             <img src="assets/images/svgs/prizes.svg" alt="">
             <img src="assets/images/svgs/prizes-thick.svg" alt="">
             Prizes
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link d-flex" data-toggle="tab" href="#activity" onclick="changeNavTabinBtn(this);">
+          <a class="nav-link d-flex" id="activity-btn" data-toggle="tab" href="#activity" onclick="changeNavTabinBtn(this);">
             <img src="assets/images/svgs/activity.svg" alt="">
             <img src="assets/images/svgs/activity-thick.svg" alt="">
             Activity
@@ -164,7 +184,7 @@
       <div id="account" class="tab-pane fade active show">
         <h1 class="title text-center">Account Details</h1>
         <p class="default-t text-center mb-4">Your personal Sirmo account details</p>
-        <div class="login-form dashboard-form w-f d-non">
+        <div class="login-form dashboard-form w-f3 d-non">
           <form class="" action="index.html" method="post">
             <div class="row">
               <div class="col-lg-12 col-md-6">
@@ -194,7 +214,7 @@
           </form>
         </div>
 
-        <div class="tab-plan w-f mt-5 pt-5">
+        <div class="tab-plan w-f3 mt-5 pt-5">
           <h1 class="sub-title text-center">Your Plan</h1>
           <p class="text-center">Your current pricing plan</p>
           <div class="mt-4">
@@ -223,7 +243,7 @@
 
 
 
-        <div class="notifications-table text-center w-f mt-5 pt-5">
+        <div class="notifications-table text-center w-f3 mt-5 pt-5">
           <h1 class="sub-title d-none d-md-block ">Notifications</h1>
           <h1 class="sub-title d-block d-md-none mb-3 ">Email Notifications</h1>
 
@@ -366,7 +386,7 @@
         <p class="default-t">Connect more other social media accounts</p>
 
 
-        <div class="connected-accounts w-f ">
+        <div class="connected-accounts w-f3 ">
           <div class="">
             <div class="icon youtube">
               <img src="assets/images/dashboard/youtube.svg" alt="">
@@ -401,7 +421,7 @@
 
       </div>
       <div id="prizes" class=" tab-pane fade">
-        <div class="w-f">
+        <div class="w-f3">
           <div class="prizes-list">
             <div class="">
               <button class="collapsed default-t connected-accounts w-100 border-0" data-toggle="collapse" data-target="#prize1" aria-expanded="false" aria-controls="other">
@@ -433,14 +453,20 @@
                       <div class="col-lg-9 col-md-10 col-sm-10 col-11 mx-auto">
                         <div class="row">
                           <div class="col-md-6">
-                            <h4 class="default-t d-inline-block">Your Prize: </h4> <h2 class="default-t d-inline-block">Sirmo V.O.F</h2> <br>
-                            <h4 class="default-t d-inline-block">Date of Start: </h4> <h2 class="default-t d-inline-block">12/10/2021</h2> <br>
-                            <h4 class="default-t d-inline-block">Date of End: </h4> <h2 class="default-t d-inline-block">12/10/2021 (30)</h2> <br>
+                            <h4 class="default-t d-inline-block">Your Prize: </h4>
+                            <h2 class="default-t d-inline-block">Sirmo V.O.F</h2> <br>
+                            <h4 class="default-t d-inline-block">Date of Start: </h4>
+                            <h2 class="default-t d-inline-block">12/10/2021</h2> <br>
+                            <h4 class="default-t d-inline-block">Date of End: </h4>
+                            <h2 class="default-t d-inline-block">12/10/2021 (30)</h2> <br>
                           </div>
                           <div class="col-md-6">
-                            <h4 class="default-t d-inline-block">Prize name: </h4> <h2 class="default-t d-inline-block">Mini Cooper</h2> <br>
-                            <h4 class="default-t d-inline-block">Prize type: </h4> <h2 class="default-t d-inline-block">Physical Prize</h2> <br>
-                            <h4 class="default-t d-inline-block">Distribution Method: </h4> <h2 class="default-t d-inline-block">Manually (email)</h2> <br>
+                            <h4 class="default-t d-inline-block">Prize name: </h4>
+                            <h2 class="default-t d-inline-block">Mini Cooper</h2> <br>
+                            <h4 class="default-t d-inline-block">Prize type: </h4>
+                            <h2 class="default-t d-inline-block">Physical Prize</h2> <br>
+                            <h4 class="default-t d-inline-block">Distribution Method: </h4>
+                            <h2 class="default-t d-inline-block">Manually (email)</h2> <br>
                           </div>
                         </div>
                       </div>
@@ -482,14 +508,20 @@
                       <div class="col-lg-9 col-md-10 col-sm-10 col-11 mx-auto">
                         <div class="row">
                           <div class="col-md-6">
-                            <h4 class="default-t d-inline-block">Your Prize: </h4> <h2 class="default-t d-inline-block">Sirmo V.O.F</h2> <br>
-                            <h4 class="default-t d-inline-block">Date of Start: </h4> <h2 class="default-t d-inline-block">12/10/2021</h2> <br>
-                            <h4 class="default-t d-inline-block">Date of End: </h4> <h2 class="default-t d-inline-block">12/10/2021 (30)</h2> <br>
+                            <h4 class="default-t d-inline-block">Your Prize: </h4>
+                            <h2 class="default-t d-inline-block">Sirmo V.O.F</h2> <br>
+                            <h4 class="default-t d-inline-block">Date of Start: </h4>
+                            <h2 class="default-t d-inline-block">12/10/2021</h2> <br>
+                            <h4 class="default-t d-inline-block">Date of End: </h4>
+                            <h2 class="default-t d-inline-block">12/10/2021 (30)</h2> <br>
                           </div>
                           <div class="col-md-6">
-                            <h4 class="default-t d-inline-block">Prize name: </h4> <h2 class="default-t d-inline-block">Mini Cooper</h2> <br>
-                            <h4 class="default-t d-inline-block">Prize type: </h4> <h2 class="default-t d-inline-block">Physical Prize</h2> <br>
-                            <h4 class="default-t d-inline-block">Distribution Method: </h4> <h2 class="default-t d-inline-block">Manually (email)</h2> <br>
+                            <h4 class="default-t d-inline-block">Prize name: </h4>
+                            <h2 class="default-t d-inline-block">Mini Cooper</h2> <br>
+                            <h4 class="default-t d-inline-block">Prize type: </h4>
+                            <h2 class="default-t d-inline-block">Physical Prize</h2> <br>
+                            <h4 class="default-t d-inline-block">Distribution Method: </h4>
+                            <h2 class="default-t d-inline-block">Manually (email)</h2> <br>
                           </div>
                         </div>
                       </div>
@@ -507,7 +539,7 @@
 
       </div>
       <div id="activity" class=" tab-pane fade">
-        <div class="w-f text-center">
+        <div class="w-f3 text-center">
           <h1 class="sub-title">Activity</h1>
           <p class="default-t">Your user activity on Giveawayhopper</p>
           <table class="activity-table">
@@ -525,14 +557,14 @@
                 <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
                 <td> <a href="#">Link</a> </td>
                 <td>28/07/2021 10:49 pm CEST</td>
-                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+                <td class="share"> <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
               </tr>
               <tr>
                 <td>Freebie campaign joined</td>
                 <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
                 <td> <a href="#">Link</a> </td>
                 <td>27/07/2021 2:12 pm CEST</td>
-                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+                <td class="share"> <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
               </tr>
               <tr>
                 <td>Connection added</td>
@@ -546,21 +578,21 @@
                 <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
                 <td> <a href="#">Link</a> </td>
                 <td>28/07/2021 10:49 pm CEST</td>
-                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+                <td class="share"> <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
               </tr>
               <tr>
                 <td>Giveaway campaign joined</td>
                 <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
                 <td> <a href="#">Link</a> </td>
                 <td>28/07/2021 10:49 pm CEST</td>
-                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+                <td class="share"> <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
               </tr>
               <tr>
                 <td>Freebie campaign joined</td>
                 <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
                 <td> <a href="#">Link</a> </td>
                 <td>27/07/2021 2:12 pm CEST</td>
-                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+                <td class="share"> <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
               </tr>
               <tr>
                 <td>Connection added</td>
@@ -574,21 +606,21 @@
                 <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
                 <td> <a href="#">Link</a> </td>
                 <td>28/07/2021 10:49 pm CEST</td>
-                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+                <td class="share"> <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
               </tr>
               <tr>
                 <td>Giveaway campaign joined</td>
                 <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
                 <td> <a href="#">Link</a> </td>
                 <td>28/07/2021 10:49 pm CEST</td>
-                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+                <td class="share"> <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
               </tr>
               <tr>
                 <td>Giveaway campaign joined</td>
                 <td> <img src="assets/images/dashboard/info.svg" alt=""> </td>
                 <td> <a href="#">Link</a> </td>
                 <td>28/07/2021 10:49 pm CEST</td>
-                <td class="share" > <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
+                <td class="share"> <a href="#"><img src="assets/images/dashboard/share.svg" alt=""></a> </td>
               </tr>
 
             </tbody>
@@ -598,8 +630,8 @@
         <div class="pagination mt-5">
           <a href="#" class="default-t disabled">
             <svg xmlns="http://www.w3.org/2000/svg" width="7.5" height="12" viewBox="0 0 7.5 12">
-            <path id="iconmonstr-arrow-25" d="M0,1.5,1.529,0,7.5,6,1.529,12,0,10.5,4.5,6Z" transform="translate(7.5 12) rotate(180)" fill="#222622" opacity="0.6"/>
-          </svg>
+              <path id="iconmonstr-arrow-25" d="M0,1.5,1.529,0,7.5,6,1.529,12,0,10.5,4.5,6Z" transform="translate(7.5 12) rotate(180)" fill="#222622" opacity="0.6" />
+            </svg>
           </a>
           <a href="#" class="default-t ">1</a>
           <a href="#" class="default-t active">2</a>
@@ -607,7 +639,7 @@
 
           <a href="#" class="default-t ">
             <svg xmlns="http://www.w3.org/2000/svg" width="7.5" height="12" viewBox="0 0 7.5 12">
-              <path id="iconmonstr-arrow-25" d="M0,1.5,1.529,0,7.5,6,1.529,12,0,10.5,4.5,6Z" fill="#222622" opacity="0.6"/>
+              <path id="iconmonstr-arrow-25" d="M0,1.5,1.529,0,7.5,6,1.529,12,0,10.5,4.5,6Z" fill="#222622" opacity="0.6" />
             </svg>
 
           </a>
@@ -645,6 +677,11 @@
     function changeNavTabinBtn(el) {
       $('#dashboard-nav-tabs').removeClass("show-tabs");
       $('#changeNavBtn a').html($(el).html());
+
+      if ($(el).attr('for')) {
+        var btn = $(el).attr('for');
+        $('#' + btn).click();
+      }
     }
 
 
@@ -657,15 +694,8 @@
         arrows: true,
         prevArrow: '<div class="slick-prev"><i class="fas fa-chevron-left"></i></div>',
         nextArrow: '<div class="slick-next"><i class="fas fa-chevron-right"></i></div>',
-
-
-
-
       });
     });
-
-
-
   </script>
 </body>
 
