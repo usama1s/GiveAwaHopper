@@ -229,7 +229,7 @@ transform: translateX(-10px);
 .dashboard-dropdown .dropdown-item:active,
 .dashboard-dropdown .dropdown-item:focus{
   background: transparent !important;
-  color: inherit !important;
+  color: black !important;
 }
 .dashboard-nav{
     background-color: #252A25 !important;
@@ -1299,7 +1299,7 @@ outline: none !important;
 }
 
 .dashboard-form form{
-  max-width: none !important;
+  /* max-width: none !important; */
 }
 .dashboard-form .form-group label{
   color: #959595;
