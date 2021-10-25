@@ -19,27 +19,6 @@
 </head>
 
 <body>
-  <section class="top-nav d-none d-lg-block w-f3">
-
-    <div class="d-flex justify-content-center text-center">
-      <div class="px-3">
-        <p>Sign up for free</p>
-      </div>
-      <p>|</p>
-      <div class="px-3">
-        <p>No creditcard required</p>
-      </div>
-      <p>|</p>
-      <div class="px-3">
-        <p>Physical & digital giveaways</p>
-      </div>
-      <p>|</p>
-      <div class="px-3">
-        <p>No coding or design skills required</p>
-      </div>
-    </div>
-
-  </section>
 
 
 
@@ -47,7 +26,8 @@
 
 
 
-  <section class="dashboard-nav nav w-f3">
+
+  <section class="dashboard-nav nav w-f">
 
     <nav class="navbar navbar-expand-md navbar-dark w-100 ">
       <a class="navbar-brand d-flex align-items-center " href="#">
@@ -190,13 +170,13 @@
               <div class="col-lg-12 col-md-6">
                 <div class="form-group mb-4 pb-2">
                   <label for="name" class="default-t mb-1">First name</label>
-                  <input type="text" class="form-control" id="name" placeholder="James">
+                  <input type="text" class="form-control" id="name" value="James" disabled readonly>
                 </div>
               </div>
               <div class="col-lg-12 col-md-6">
                 <div class="form-group mb-4 pb-2">
                   <label for="last-name" class="default-t mb-1">Last name</label>
-                  <input type="text" class="form-control" id="last-name" placeholder="Carpenter">
+                  <input type="text" class="form-control" id="last-name" value="Carpenter" disabled readonly>
                 </div>
               </div>
             </div>
@@ -204,7 +184,7 @@
 
             <div class="form-group mb-4 pb-2">
               <label for="email" class="default-t mb-1">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="jamescarpenter@gmail.com">
+              <input type="email" class="form-control" id="email" value="jamescarpenter@gmail.com" disabled readonly>
             </div>
 
             <div class="mt-5 pt-2">
@@ -352,11 +332,17 @@
             </tbody>
           </table>
 
-          <button class="edit-btn mt-5 mb-5" type="button" name="button">Edit</button>
+          <button class="edit-btn mt-3 mb-5" type="button" name="button">Edit</button>
 
 
-          <a class="d-block text-center default-t mt-5" href="#">Advanced Settings <img class="ml-2" src="assets/images/svgs/arrow-b.svg" alt=""> </a>
-          <a class="d-block text-center default-t mt-4" href="#">Deactivate your account </a>
+          <a class="d-block text-center default-t mt-5 collapsed" data-toggle="collapse" data-target="#advanced-settings" aria-expanded="false" aria-controls="other">
+            Advanced Settings
+            <img class="ml-2" src="assets/images/svgs/arrow-b.svg" alt="">
+          </a>
+          <div class="collapse" id="advanced-settings" aria-labelledby="advanced-settings" data-parent="#prizes">
+            <a class="d-block text-center default-t mt-4 " >Deactivate your account </a>
+          </div>
+
         </div>
 
       </div>
@@ -383,7 +369,7 @@
         </div>
 
         <h1 class="sub-title mt-5">Connected accounts</h1>
-        <p class="default-t">Connect more other social media accounts</p>
+        <p class="default-t">Your connected social media accounts</p>
 
 
         <div class="connected-accounts w-f3 ">
@@ -422,6 +408,8 @@
       </div>
       <div id="prizes" class=" tab-pane fade">
         <div class="w-f3">
+          <h1 class="sub-title mt-5">Prizes</h1>
+          <p class="default-t">The list of giveaway prizes you won</p>
           <div class="prizes-list">
             <div class="">
               <button class="collapsed default-t connected-accounts w-100 border-0" data-toggle="collapse" data-target="#prize1" aria-expanded="false" aria-controls="other">
