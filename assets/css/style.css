@@ -590,6 +590,7 @@ font-weight: 500;
 .slick-track{
   margin-bottom: 15px;
 }
+.carousel-control-prev,
 .slick-prev.slick-arrow{
   position: absolute;
     left: calc(50% - 80px);
@@ -597,7 +598,9 @@ font-weight: 500;
     top: auto;
     cursor: pointer;
     z-index: 1;
+
 }
+.carousel-control-next,
 .slick-next.slick-arrow{
   position: absolute;
     left: calc(50% + 71px);
@@ -605,6 +608,57 @@ font-weight: 500;
     top: auto;
     cursor: pointer;
     z-index: 10;
+
+}
+.carousel-control-next,
+.carousel-control-prev{
+  bottom: 28px;
+  opacity: 1;
+    color: #232323 !important;
+  width: 20px;
+  text-align: center;
+  z-index: 20;
+  transform: translateX(-50%);
+}
+.carousel-control-next i,
+.carousel-control-prev i{
+
+  text-align: center;
+}
+.carousel-control-next{
+
+    left: calc(50% + 71px);
+
+}
+.carousel-control-prev{
+
+  left: calc(50% - 71px);
+
+
+}
+.carousel-indicators li{
+  margin: 0 12px;
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+}
+.carousel-indicators li::after{
+  width: 7px;
+  height: 7px;
+  background: #232323 !important;
+  border-radius: 50%;
+  opacity: 0.15;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.carousel-indicators li.active{
+  background: transparent;
+}
+.carousel-indicators li.active::after{
+  opacity: 0.8;
 }
 .slick-prev:before, .slick-next:before{
   font-size: 0;
@@ -1259,7 +1313,7 @@ Fill: #FFFFFF;
 .dashboard .nav-link{
   font-weight: 300;
   letter-spacing: 0px;
-color: #232323;
+color: #232323 !important;
 font-size: 18px;
 text-decoration: none !important;
 outline: none !important;
@@ -1554,10 +1608,14 @@ overflow: hidden;
 }
 .prizes-list .prize-slider{
   background: #F1F5F9 0% 0% no-repeat padding-box;
-
+padding-bottom: 50px;
 }
 .prizes-list{
 
+}
+.prize-item{
+  /* width: 1000px; */
+  height: 284px;
 }
 .prizes-list .prize-item h4,
 .prizes-list .prize-item h1{
@@ -1721,10 +1779,11 @@ px
 *[data-toggle="collapse"]{
     cursor: pointer;
 }
-*[data-toggle="collapse"] img{
+*[data-toggle="collapse"] .ii>*{
   transition: transform 0.5s;
+  transform-origin: center;
 
 }
-*[data-toggle="collapse"][aria-expanded="false"] img{
+*[data-toggle="collapse"][aria-expanded="false"] .ii>*{
   transform: rotate(180deg);
 }

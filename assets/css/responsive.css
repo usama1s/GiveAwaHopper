@@ -532,4 +532,7 @@ footer a {
   .form-control[disabled], .form-control[readonly], .login-form input{
     font-size: 16px;
   }
+  .prize-item{
+    min-height: 304px;
+  }
 }
