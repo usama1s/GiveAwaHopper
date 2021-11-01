@@ -120,10 +120,12 @@
           <img src="assets/images/svgs/user-thick.svg" alt="">
           My Account
         </a>
-        <svg xmlns="http://www.w3.org/2000/svg" height="11" viewBox="0 0 24 24" style="
-">
-          <path fill="#232323" d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg"  height="7" viewBox="0 0 7.8 4.875">
+          <path id="iconmonstr-arrow-25" d="M0,.975.994,0,4.875,3.9.994,7.8,0,6.825,2.925,3.9Z" transform="translate(7.8) rotate(90)" fill="#232323"/>
         </svg>
+
       </button>
 
       <ul class="nav nav-tabs justify-content-center py-0 bg-transparent d-none d-md-flex" id="dashboard-nav-tabs">
@@ -409,7 +411,7 @@
       </div>
       <div id="prizes" class=" tab-pane fade">
         <div class="w-f3">
-          <h1 class="sub-title text-center mt-5">Prizes</h1>
+          <h1 class="sub-title text-center">Prizes</h1>
           <p class="default-t text-center">The list of giveaway prizes you won</p>
           <div class="prizes-list mt-4">
             <div class="">
@@ -682,6 +684,7 @@
   <script type="text/javascript">
     function toggleDashboardTab() {
       $('#dashboard-nav-tabs').toggleClass("show-tabs");
+      $('#changeNavBtn').toggleClass("toggle");
     }
 
     function changeNavTabinBtn(el) {

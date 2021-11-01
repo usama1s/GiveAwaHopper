@@ -1402,10 +1402,13 @@ border: 0;
 .dashboard-nav-btn svg{
   position: absolute;
   right: 18px;
-  top: 17px;
-  transform: rotate(90deg);
+  top: 19px;
+transition: transform 0.5s;
+transform-origin: center;
 }
-
+.dashboard-nav-btn.toggle svg{
+transform: rotate(-180deg);
+}
 
 
 
