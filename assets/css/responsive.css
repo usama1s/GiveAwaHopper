@@ -535,4 +535,7 @@ footer a {
   .prize-item{
     min-height: 304px;
   }
+  .account-details{
+    padding-top: 75px;
+  }
 }

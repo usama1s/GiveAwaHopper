@@ -60,7 +60,7 @@
           <li class="nav-item d-none d-lg-block">
             <a class="nav-link " aria-current="page" href="#">Home </a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown dashboard-dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Learn
               <svg xmlns="http://www.w3.org/2000/svg"  height="11" viewBox="0 0 24 24"><path fill="white"  d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
@@ -675,15 +675,32 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
 
 
   <script src="assets/js/slick-master/slick/slick.min.js"></script>
-  <!-- <script src="assets/js/slick-master/slick/to/slick.js"></script> -->
 
-  <script src="assets/js/customSlick.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+    $('.mob-pricing-slider').slick({
+      draggable: false,
+      speed: 500,
+      infinite: true,
+      arrows: true,
+      prevArrow: '<div class="slick-prev"><i class="fas fa-chevron-left"></i></div>',
+      nextArrow: '<div class="slick-next"><i class="fas fa-chevron-right"></i></div>',
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      slidesToShow: 1,
+      centerMode: true,
+      variableWidth: true
+    });
+
+  });
+
+  </script>
 
 
 </body>
